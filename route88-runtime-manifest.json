@@ -1,35 +1,35 @@
 {
   "schema": "route88-mobile-compiled-delivery-v2",
-  "createdUtc": "2026-10-06T09:36:51.479602+00:00",
-  "buildId": "246982ac5e322aed30aed8db6dd5520159fe8302660e3c83fbcdabf0bffdfebf",
+  "createdUtc": "2026-10-06T10:11:49.762861+00:00",
+  "buildId": "da933f4491170a98787007ec843bcae9819825791155c8f1d7c39a81c9537f35",
   "profileId": "21186e0de7bc0ef88e1c82bfbec872ec64d8f382df6863b0cefd801488e8adad",
-  "startupTransferBytes": 149670235,
+  "startupTransferBytes": 149671421,
   "deferredTransferBytes": 37523998,
-  "startupDecodedBytes": 229809568,
+  "startupDecodedBytes": 229812464,
   "deferredDecodedBytes": 38217039,
   "compiledFiles": [
     {
       "relative": "Build/Route88-Mobile.data",
       "kind": "data",
-      "bytes": 156702706,
-      "sha256": "805311491f10150ead7a441db64df0d48a838028a8df3fce83823a393f503ed8",
-      "gzipBytes": 133831123,
-      "gzipSha256": "7b34bc4493ea3449c32d5f926f3e30bf5b6dbda06e0e7e5a4a1da17cca925109",
+      "bytes": 156703076,
+      "sha256": "7502df613860e64f713c0183222382dd4d9c34956a4cc55f8128b4fdcda56372",
+      "gzipBytes": 133831207,
+      "gzipSha256": "abffeeef5b0d98a0155a3cb982261f7832d44069f8ff8de608a7ce87f460da3a",
       "parts": [
         {
-          "relative": "Build/Route88-Mobile.data.gzip-7b34bc4493ea3449.part01.bin",
+          "relative": "Build/Route88-Mobile.data.gzip-abffeeef5b0d98a0.part01.bin",
           "bytes": 47185920,
-          "sha256": "a010e1ba080520fe271d6e4861416ef48068099c163089c9bbe38b4ddf24dbe4"
+          "sha256": "ca85be04de3b4dacb7e6346814b81cc2f45df53823b4e6c1e4011af0643a4500"
         },
         {
-          "relative": "Build/Route88-Mobile.data.gzip-7b34bc4493ea3449.part02.bin",
+          "relative": "Build/Route88-Mobile.data.gzip-abffeeef5b0d98a0.part02.bin",
           "bytes": 47185920,
-          "sha256": "a3742eaad7880955951dcae8cea71b554fcf7a8db84437c69c7419335e5d33cb"
+          "sha256": "20c0b4ccd030792ae039c60b8802786ca7d56f0118f995459588b98da114f37a"
         },
         {
-          "relative": "Build/Route88-Mobile.data.gzip-7b34bc4493ea3449.part03.bin",
-          "bytes": 39459283,
-          "sha256": "2dc9b7b75fdc91ff63d6d44e8fd1f956899725e99ff55dc34099ec169557ea45"
+          "relative": "Build/Route88-Mobile.data.gzip-abffeeef5b0d98a0.part03.bin",
+          "bytes": 39459367,
+          "sha256": "a0f1ea2b7fd61c1527421c4c0070e7dedd9bfb09208e2c85a9954c86c6862a97"
         }
       ],
       "contentType": "application/octet-stream"
@@ -37,15 +37,15 @@
     {
       "relative": "Build/Route88-Mobile.wasm",
       "kind": "wasm",
-      "bytes": 72354237,
-      "sha256": "774d20971d5cbf0d0b67ecad0706873f3a4f93121d68953edb0c373398accea1",
-      "gzipBytes": 15663434,
-      "gzipSha256": "cae4acaae75ba399c0958ad7be72a605a2f22b280d2883489950971830ac4032",
+      "bytes": 72356763,
+      "sha256": "80ed7be2312860457573d6d7c73fb00946878a538659942ec7b952bedb0aa901",
+      "gzipBytes": 15664531,
+      "gzipSha256": "adb3341f9d0905f9a6f6d1621d342b801cb779b8afe995524004d362549e2caf",
       "parts": [
         {
-          "relative": "Build/Route88-Mobile.wasm.gzip-cae4acaae75ba399.part01.bin",
-          "bytes": 15663434,
-          "sha256": "cae4acaae75ba399c0958ad7be72a605a2f22b280d2883489950971830ac4032"
+          "relative": "Build/Route88-Mobile.wasm.gzip-adb3341f9d0905f9.part01.bin",
+          "bytes": 15664531,
+          "sha256": "adb3341f9d0905f9a6f6d1621d342b801cb779b8afe995524004d362549e2caf"
         }
       ],
       "contentType": "application/wasm"
@@ -54,14 +54,14 @@
       "relative": "Build/Route88-Mobile.framework.js",
       "kind": "framework",
       "bytes": 752625,
-      "sha256": "39929d711bb491b31a67f07b626ca2017cce92ff1ba79358f6c378583f0cdce9",
-      "gzipBytes": 155654,
-      "gzipSha256": "017f500f21b1ce5e1aedc0954a9d02df2645f797eab88d2132ce2e95e5e5415b",
+      "sha256": "6c4a61a9dba99cf64ab9217e4994031f64711984bf1ab8a1353105d4c90a00e6",
+      "gzipBytes": 155659,
+      "gzipSha256": "2379244dfe214774bb0bc3cf25cc6d4450d0e7e5fbf7d6e59ebd206384f321c9",
       "parts": [
         {
-          "relative": "Build/Route88-Mobile.framework.js.gzip-017f500f21b1ce5e.part01.bin",
-          "bytes": 155654,
-          "sha256": "017f500f21b1ce5e1aedc0954a9d02df2645f797eab88d2132ce2e95e5e5415b"
+          "relative": "Build/Route88-Mobile.framework.js.gzip-2379244dfe214774.part01.bin",
+          "bytes": 155659,
+          "sha256": "2379244dfe214774bb0bc3cf25cc6d4450d0e7e5fbf7d6e59ebd206384f321c9"
         }
       ],
       "contentType": "application/javascript"
