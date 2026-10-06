@@ -31,15 +31,18 @@ button{font:inherit;min-height:48px;padding:12px 18px;border:1px solid #b88236;b
 <button id="fullscreen" class="secondary" hidden>Use full screen</button>
 <button id="retry" class="secondary" hidden>Reload and retry</button>
 <pre id="error" role="alert"></pre>
-<small id="build">Compiled runtime only. First load downloads about 270 MB. Keep this page open while playing.</small>
+<small id="build">First load downloads about 150 MB. Later content loads when needed. Keep this page open while playing.</small>
 </section>
 </main>
 <script>
 "use strict";
-const config = {"buildId":"6a882a26b623a90e33a7e5f0c16ed3d3bb27f53e6c41052deb65eb4b98260c16","loaderUrl":"Build/Route88-WebGL.loader.js?v=700aab8f71e278f80ba657186b4a916495022dcf9a97e4f7f20be4669ed22339","dataUrl":"Build/Route88-WebGL.data?v=a7a2ddbd4c3cded8ee3c5e70b1d7e43c0dd6bd59b053ae2d2245e5edc2483802","frameworkUrl":"Build/Route88-WebGL.framework.js?v=bad50cf090c6843bbc133b449c7163e1e0a85040b758cf586c1c12f4befafb17","codeUrl":"Build/Route88-WebGL.wasm?v=76bb9b0268af7e14c307b41c2c07f0239a3d6d0bab00c182b00bea3bbe65da51","streamingAssetsUrl":"StreamingAssets","companyName":"Scott Natoli","productName":"Route 88","productVersion":"1.0.0"};
+const config = {"buildId":"abb6b6c8e69d3e247fc097cc5296485560effa9c7302e0144c353df1d6147101","loaderUrl":"Build/Route88-Mobile.loader.js?v=a353473a1cfadeaef6f46e4e9223cbd7cdbb5628fbb22f82d1e5b7c81f6b6d78","dataUrl":"Build/Route88-Mobile.data?v=6592af78e59acb1e615c93d31440be365fc9b8b7cdf0234b411cefc0b9e24109","frameworkUrl":"Build/Route88-Mobile.framework.js?v=9d5391732fb1a453220aa12c91fb752397a8149348080a6fcac20359ec54fdc6","codeUrl":"Build/Route88-Mobile.wasm?v=d2cdacdc530af96c2c1dd71c3db6537c93199ef97e094029c3b9502eb5d86779","streamingAssetsUrl":"StreamingAssets","companyName":"Scott Natoli","productName":"Route 88","productVersion":"1.0.0"};
+const initialFiles=[{"relative":"Build/Route88-Mobile.data","kind":"data","bytes":156696737,"sha256":"6592af78e59acb1e615c93d31440be365fc9b8b7cdf0234b411cefc0b9e24109","gzipBytes":133828123,"gzipSha256":"f9a0335f7ad0812fbb1a93c85d2df78f20a86f3b44b56d74646c76b6bc536bcf","parts":[{"relative":"Build/Route88-Mobile.data.gzip-f9a0335f7ad0812f.part01.bin","bytes":47185920,"sha256":"e27a5c067d67173fd6e59596890a684ac41fe88f4f606dc731482890c41ab83f"},{"relative":"Build/Route88-Mobile.data.gzip-f9a0335f7ad0812f.part02.bin","bytes":47185920,"sha256":"81588465b29edd9a491f09eaa469a19812a00483e7c2d94256a18d66a80a78b5"},{"relative":"Build/Route88-Mobile.data.gzip-f9a0335f7ad0812f.part03.bin","bytes":39456283,"sha256":"9425e9f3228b71c41a4269149790846c35a3822da7af045c9f17d19b0b325897"}],"contentType":"application/octet-stream"},{"relative":"Build/Route88-Mobile.wasm","kind":"wasm","bytes":72285641,"sha256":"d2cdacdc530af96c2c1dd71c3db6537c93199ef97e094029c3b9502eb5d86779","gzipBytes":15658757,"gzipSha256":"b7b21f3b3462bc37859ac0be1b3b7dca8e03ae1fca82994160603c91046075ae","parts":[{"relative":"Build/Route88-Mobile.wasm.gzip-b7b21f3b3462bc37.part01.bin","bytes":15658757,"sha256":"b7b21f3b3462bc37859ac0be1b3b7dca8e03ae1fca82994160603c91046075ae"}],"contentType":"application/wasm"},{"relative":"Build/Route88-Mobile.framework.js","kind":"framework","bytes":752485,"sha256":"9d5391732fb1a453220aa12c91fb752397a8149348080a6fcac20359ec54fdc6","gzipBytes":155610,"gzipSha256":"4b1657e1cb80daeca4083c367806481ccd3c47985c3f305bd26a3d13784fd5dc","parts":[{"relative":"Build/Route88-Mobile.framework.js.gzip-4b1657e1cb80daec.part01.bin","bytes":155610,"sha256":"4b1657e1cb80daeca4083c367806481ccd3c47985c3f305bd26a3d13784fd5dc"}],"contentType":"application/javascript"}];
+const transferTotal=initialFiles.reduce((sum,file)=>sum+file.gzipBytes,0);
+const transferLoaded=new Map();
 const shell=document.getElementById("shell"),canvas=document.getElementById("game"),overlay=document.getElementById("overlay"),start=document.getElementById("start"),retry=document.getElementById("retry"),fullscreen=document.getElementById("fullscreen"),status=document.getElementById("status"),progress=document.getElementById("progress"),errorBox=document.getElementById("error");
 let instance=null,loading=false,ready=false;
-document.getElementById("build").textContent="Build "+config.buildId.slice(0,12)+" - compiled phone playtest. First load about 270 MB.";
+document.getElementById("build").textContent="Build "+config.buildId.slice(0,12)+" - compiled phone playtest. First load about 150 MB; later content loads as needed.";
 // Preserve each browser audio context's real API; resume only from a human gesture.
 const audioContexts=new Set();
 for(const name of ["AudioContext","webkitAudioContext"]){
@@ -52,9 +55,9 @@ function banner(message,type){if(type==="error"){fail(new Error(message));}else 
 function enterGame(){resumeAudio();canvas.focus();overlay.hidden=true;}
 start.addEventListener("click",()=>{
  if(ready){enterGame();return;}if(loading)return;
- resumeAudio();loading=true;start.disabled=true;start.textContent="Loading...";status.textContent="Loading the compiled game. The first load can take a moment.";
+ resumeAudio();loading=true;start.disabled=true;start.textContent="Loading...";status.textContent="Downloading the first playable content...";
  const settings={...config,cacheControl:()=>"no-store",devicePixelRatio:Math.min(window.devicePixelRatio||1,2),showBanner:banner};delete settings.loaderUrl;delete settings.buildId;
- try{Promise.resolve(createUnityInstance(canvas,settings,value=>{progress.value=Math.max(0,Math.min(1,value));status.textContent="Loading game - "+Math.round(progress.value*100)+"%";})).then(game=>{instance=game;loading=false;ready=true;progress.value=1;status.textContent="Ready. Tap below to enter with sound.";start.textContent="Enter game with sound";start.disabled=false;fullscreen.hidden=!shell.requestFullscreen;}).catch(fail);}catch(error){fail(error);}
+ try{Promise.resolve(createUnityInstance(canvas,settings,value=>{const amount=Math.max(0,Math.min(1,value));progress.value=amount;const received=Array.from(transferLoaded.values()).reduce((sum,bytes)=>sum+bytes,0);if(amount>=0.9||received>=transferTotal){status.textContent="Starting the game...";}else if(!received){status.textContent="Downloading the first playable content...";}})).then(game=>{instance=game;loading=false;ready=true;progress.value=1;status.textContent="Ready. Tap below to enter with sound.";start.textContent="Enter game with sound";start.disabled=false;fullscreen.hidden=!shell.requestFullscreen;}).catch(fail);}catch(error){fail(error);}
 });
 fullscreen.addEventListener("click",()=>{resumeAudio();const request=shell.requestFullscreen;if(request)Promise.resolve(request.call(shell)).then(enterGame).catch(error=>{status.textContent="Full screen is unavailable here. Tap Enter game to continue.";console.info(error.message);});});
 retry.addEventListener("click",()=>location.reload());
@@ -74,7 +77,7 @@ function runtimeIdentity(worker){
   try{worker.postMessage({type:"ROUTE88_RUNTIME_IDENTITY"},[channel.port2]);}catch(error){finish(null);}
  });
 }
-function matchesRuntime(identity){return identity&&identity.type==="ROUTE88_RUNTIME"&&identity.buildId===config.buildId&&identity.dataSha256===runtimeDataSha;}
+function matchesRuntime(identity){return identity&&identity.type==="ROUTE88_RUNTIME"&&identity.buildId===config.buildId&&identity.dataSha256===runtimeDataSha&&identity.compression==="gzip-stream-v2"&&identity.supported===true;}
 function waitForRuntimeController(){
  return new Promise((resolve,reject)=>{
   let finished=false,checking=false;
@@ -91,15 +94,15 @@ function waitForRuntimeController(){
  });
 }
 async function prepareRuntime(){
- if(!window.isSecureContext||!("serviceWorker" in navigator)||typeof ReadableStream!=="function"){
-  throw new Error("Open this game's HTTPS link in a current Safari or Chrome browser. The runtime download helper needs HTTPS and service worker support.");
+ if(!window.isSecureContext||!("serviceWorker" in navigator)||typeof ReadableStream!=="function"||typeof DecompressionStream!=="function"){
+  throw new Error("Open this game's HTTPS link in a current Safari or Chrome browser. The compressed game download needs HTTPS and streaming gzip support.");
  }
  const workerUrl=new URL("route88-sw.js",siteBase);workerUrl.searchParams.set("v",config.buildId);
  status.textContent="Preparing the game download...";
  await navigator.serviceWorker.register(workerUrl.href,{scope:siteBase.pathname,updateViaCache:"none"});
  await waitForRuntimeController();
  const dataProbe=await fetch(new URL(config.dataUrl,siteBase).href,{method:"HEAD",cache:"no-store"});
- if(!dataProbe.ok||dataProbe.headers.get("X-Route88-Data-SHA256")!==runtimeDataSha||Number(dataProbe.headers.get("Content-Length"))!==194841512){throw new Error("The runtime download helper could not verify this build. Reload this page and retry.");}
+ if(!dataProbe.ok||dataProbe.headers.get("X-Route88-Data-SHA256")!==runtimeDataSha||Number(dataProbe.headers.get("Content-Length"))!==initialFiles.find(file=>file.kind==="data").bytes){throw new Error("The runtime download helper could not verify this build. Reload this page and retry.");}
  // Unity allocates its normal data buffer from this worker's Content-Length;
  // the helper streams it directly without a second full-size Blob.
  await new Promise((resolve,reject)=>{
@@ -110,6 +113,14 @@ async function prepareRuntime(){
  });
  status.textContent="Game loader ready. Tap to start.";start.disabled=false;
 }
+if("serviceWorker" in navigator)navigator.serviceWorker.addEventListener("message",event=>{
+ const message=event.data;if(!loading||!message||message.type!=="ROUTE88_DOWNLOAD_PROGRESS"||message.buildId!==config.buildId)return;
+ const file=initialFiles.find(file=>file.relative===message.file);if(!file)return;
+ transferLoaded.set(file.relative,Math.max(transferLoaded.get(file.relative)||0,Math.min(file.gzipBytes,message.loaded)));
+ const received=Array.from(transferLoaded.values()).reduce((sum,bytes)=>sum+bytes,0);
+ progress.value=Math.max(progress.value,Math.min(0.89,received/transferTotal*0.89));
+ status.textContent=received>=transferTotal?"Starting the game...":"Downloading "+(received/1000000).toFixed(1)+" / "+(transferTotal/1000000).toFixed(1)+" MB...";
+});
 const probe=document.createElement("canvas");
 if(!probe.getContext("webgl2")){fail(new Error("This browser/device needs WebGL2. Try a current Safari or Chrome browser."));}
 else{prepareRuntime().catch(fail);}
