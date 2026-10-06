@@ -1,0 +1,77 @@
+{
+  "schema": "route88-github-pages-compiled-runtime-v1",
+  "product": "Route 88",
+  "buildId": "6a882a26b623a90e33a7e5f0c16ed3d3bb27f53e6c41052deb65eb4b98260c16",
+  "createdUtc": "2026-10-06T04:02:41.552086+00:00",
+  "payload": "Compiled Unity WebGL runtime only; no Unity project or source asset packs.",
+  "launcher": "index.html",
+  "worker": "route88-sw.js",
+  "data": {
+    "virtualRelative": "Build/Route88-WebGL.data",
+    "bytes": 194841512,
+    "sha256": "a7a2ddbd4c3cded8ee3c5e70b1d7e43c0dd6bd59b053ae2d2245e5edc2483802",
+    "partLimitBytes": 47185920,
+    "parts": [
+      {
+        "relative": "Build/Route88-WebGL.data-a7a2ddbd4c3cded8.part01.bin",
+        "bytes": 47185920,
+        "sha256": "02c3756554a4c4b5df2825886b818f346cb3a5bfd176b6f9f99a4304e6fe63c3"
+      },
+      {
+        "relative": "Build/Route88-WebGL.data-a7a2ddbd4c3cded8.part02.bin",
+        "bytes": 47185920,
+        "sha256": "d9c88504df316151f6e5c54756e906f04582ec3e349d97d05231ca08d56c5745"
+      },
+      {
+        "relative": "Build/Route88-WebGL.data-a7a2ddbd4c3cded8.part03.bin",
+        "bytes": 47185920,
+        "sha256": "3656eea2d56c0d9651e0a21d8f887f2c01f7de7f941bb6e5134e510229d87c17"
+      },
+      {
+        "relative": "Build/Route88-WebGL.data-a7a2ddbd4c3cded8.part04.bin",
+        "bytes": 47185920,
+        "sha256": "27e1869a5aae589fe7975c2933757777544f90c862238de0760bb9b2771ece96"
+      },
+      {
+        "relative": "Build/Route88-WebGL.data-a7a2ddbd4c3cded8.part05.bin",
+        "bytes": 6097832,
+        "sha256": "34fbd95b39c845b0c796e00f58c7b963a0ccd2cccabd8679c082dbab7733b697"
+      }
+    ]
+  },
+  "runtimeFiles": [
+    {
+      "relative": "Build/Route88-WebGL.loader.js",
+      "bytes": 20017,
+      "sha256": "700aab8f71e278f80ba657186b4a916495022dcf9a97e4f7f20be4669ed22339"
+    },
+    {
+      "relative": "Build/Route88-WebGL.framework.js",
+      "bytes": 751541,
+      "sha256": "bad50cf090c6843bbc133b449c7163e1e0a85040b758cf586c1c12f4befafb17"
+    },
+    {
+      "relative": "Build/Route88-WebGL.wasm",
+      "bytes": 71936055,
+      "sha256": "76bb9b0268af7e14c307b41c2c07f0239a3d6d0bab00c182b00bea3bbe65da51"
+    },
+    {
+      "relative": "StreamingAssets/UnityServicesProjectConfiguration.json",
+      "bytes": 1124,
+      "sha256": "c3a60875a7ef4d37c6cef030691dcabfc4b427ac6cb01d4819a71cbe29138a35"
+    }
+  ],
+  "transport": "Same-origin HTTPS; sequential service-worker chunk streaming with Content-Length; no Blob reconstruction or CacheStorage copies.",
+  "runtimeMemory": "Unity still allocates the original game data buffer and engine memory. Browser networking buffers are implementation-dependent.",
+  "validation": {
+    "physicalPhoneOnOriginalLanRuntime": "Game and sound confirmed by user.",
+    "physicalPhoneOnGitHubPages": "Pending deployment and user test.",
+    "portablePackageChecks": "Passed exact-byte HTTP streaming, sequential reader, cancellation/error, version handshake, scoped registration, HEAD and audio gesture wiring checks.",
+    "testedScopes": [
+      "/",
+      "/DeadNorth/",
+      "/Route88-Playtest/"
+    ],
+    "checksUtc": "2026-10-06T04:05:25.686Z"
+  }
+}
