@@ -1,35 +1,35 @@
 {
   "schema": "route88-mobile-compiled-delivery-v2",
-  "createdUtc": "2026-10-06T08:40:04.566013+00:00",
-  "buildId": "abb6b6c8e69d3e247fc097cc5296485560effa9c7302e0144c353df1d6147101",
+  "createdUtc": "2026-10-06T09:36:51.479602+00:00",
+  "buildId": "246982ac5e322aed30aed8db6dd5520159fe8302660e3c83fbcdabf0bffdfebf",
   "profileId": "21186e0de7bc0ef88e1c82bfbec872ec64d8f382df6863b0cefd801488e8adad",
-  "startupTransferBytes": 149662514,
-  "deferredTransferBytes": 37523995,
-  "startupDecodedBytes": 229734863,
-  "deferredDecodedBytes": 38217035,
+  "startupTransferBytes": 149670235,
+  "deferredTransferBytes": 37523998,
+  "startupDecodedBytes": 229809568,
+  "deferredDecodedBytes": 38217039,
   "compiledFiles": [
     {
       "relative": "Build/Route88-Mobile.data",
       "kind": "data",
-      "bytes": 156696737,
-      "sha256": "6592af78e59acb1e615c93d31440be365fc9b8b7cdf0234b411cefc0b9e24109",
-      "gzipBytes": 133828123,
-      "gzipSha256": "f9a0335f7ad0812fbb1a93c85d2df78f20a86f3b44b56d74646c76b6bc536bcf",
+      "bytes": 156702706,
+      "sha256": "805311491f10150ead7a441db64df0d48a838028a8df3fce83823a393f503ed8",
+      "gzipBytes": 133831123,
+      "gzipSha256": "7b34bc4493ea3449c32d5f926f3e30bf5b6dbda06e0e7e5a4a1da17cca925109",
       "parts": [
         {
-          "relative": "Build/Route88-Mobile.data.gzip-f9a0335f7ad0812f.part01.bin",
+          "relative": "Build/Route88-Mobile.data.gzip-7b34bc4493ea3449.part01.bin",
           "bytes": 47185920,
-          "sha256": "e27a5c067d67173fd6e59596890a684ac41fe88f4f606dc731482890c41ab83f"
+          "sha256": "a010e1ba080520fe271d6e4861416ef48068099c163089c9bbe38b4ddf24dbe4"
         },
         {
-          "relative": "Build/Route88-Mobile.data.gzip-f9a0335f7ad0812f.part02.bin",
+          "relative": "Build/Route88-Mobile.data.gzip-7b34bc4493ea3449.part02.bin",
           "bytes": 47185920,
-          "sha256": "81588465b29edd9a491f09eaa469a19812a00483e7c2d94256a18d66a80a78b5"
+          "sha256": "a3742eaad7880955951dcae8cea71b554fcf7a8db84437c69c7419335e5d33cb"
         },
         {
-          "relative": "Build/Route88-Mobile.data.gzip-f9a0335f7ad0812f.part03.bin",
-          "bytes": 39456283,
-          "sha256": "9425e9f3228b71c41a4269149790846c35a3822da7af045c9f17d19b0b325897"
+          "relative": "Build/Route88-Mobile.data.gzip-7b34bc4493ea3449.part03.bin",
+          "bytes": 39459283,
+          "sha256": "2dc9b7b75fdc91ff63d6d44e8fd1f956899725e99ff55dc34099ec169557ea45"
         }
       ],
       "contentType": "application/octet-stream"
@@ -37,15 +37,15 @@
     {
       "relative": "Build/Route88-Mobile.wasm",
       "kind": "wasm",
-      "bytes": 72285641,
-      "sha256": "d2cdacdc530af96c2c1dd71c3db6537c93199ef97e094029c3b9502eb5d86779",
-      "gzipBytes": 15658757,
-      "gzipSha256": "b7b21f3b3462bc37859ac0be1b3b7dca8e03ae1fca82994160603c91046075ae",
+      "bytes": 72354237,
+      "sha256": "774d20971d5cbf0d0b67ecad0706873f3a4f93121d68953edb0c373398accea1",
+      "gzipBytes": 15663434,
+      "gzipSha256": "cae4acaae75ba399c0958ad7be72a605a2f22b280d2883489950971830ac4032",
       "parts": [
         {
-          "relative": "Build/Route88-Mobile.wasm.gzip-b7b21f3b3462bc37.part01.bin",
-          "bytes": 15658757,
-          "sha256": "b7b21f3b3462bc37859ac0be1b3b7dca8e03ae1fca82994160603c91046075ae"
+          "relative": "Build/Route88-Mobile.wasm.gzip-cae4acaae75ba399.part01.bin",
+          "bytes": 15663434,
+          "sha256": "cae4acaae75ba399c0958ad7be72a605a2f22b280d2883489950971830ac4032"
         }
       ],
       "contentType": "application/wasm"
@@ -53,79 +53,79 @@
     {
       "relative": "Build/Route88-Mobile.framework.js",
       "kind": "framework",
-      "bytes": 752485,
-      "sha256": "9d5391732fb1a453220aa12c91fb752397a8149348080a6fcac20359ec54fdc6",
-      "gzipBytes": 155610,
-      "gzipSha256": "4b1657e1cb80daeca4083c367806481ccd3c47985c3f305bd26a3d13784fd5dc",
+      "bytes": 752625,
+      "sha256": "39929d711bb491b31a67f07b626ca2017cce92ff1ba79358f6c378583f0cdce9",
+      "gzipBytes": 155654,
+      "gzipSha256": "017f500f21b1ce5e1aedc0954a9d02df2645f797eab88d2132ce2e95e5e5415b",
       "parts": [
         {
-          "relative": "Build/Route88-Mobile.framework.js.gzip-4b1657e1cb80daec.part01.bin",
-          "bytes": 155610,
-          "sha256": "4b1657e1cb80daeca4083c367806481ccd3c47985c3f305bd26a3d13784fd5dc"
+          "relative": "Build/Route88-Mobile.framework.js.gzip-017f500f21b1ce5e.part01.bin",
+          "bytes": 155654,
+          "sha256": "017f500f21b1ce5e1aedc0954a9d02df2645f797eab88d2132ce2e95e5e5415b"
         }
       ],
       "contentType": "application/javascript"
     },
     {
-      "relative": "Content/f62e16f7feea1c3d85ef2603734bf89cb88cfcbe530a4aa23514ce82b99c7923.bundle",
+      "relative": "Content/69ff5656e8ab65cc883b365926d12a5e14ce7b699f47c13e649e9ca62861ac1d.bundle",
       "kind": "bundle",
-      "bytes": 4046788,
-      "sha256": "f62e16f7feea1c3d85ef2603734bf89cb88cfcbe530a4aa23514ce82b99c7923",
+      "bytes": 4046789,
+      "sha256": "69ff5656e8ab65cc883b365926d12a5e14ce7b699f47c13e649e9ca62861ac1d",
       "gzipBytes": 4044230,
-      "gzipSha256": "e7280b7b4e6a12e112b98e3c3d278749675b761511cdaa05e3a2ccf78c198fe4",
+      "gzipSha256": "f2d11671949f480d6d87a24e2d067d3c5621a45c39a23cd38e9a850f91b712bc",
       "parts": [
         {
-          "relative": "Content/f62e16f7feea1c3d85ef2603734bf89cb88cfcbe530a4aa23514ce82b99c7923.bundle.gzip-e7280b7b4e6a12e1.part01.bin",
+          "relative": "Content/69ff5656e8ab65cc883b365926d12a5e14ce7b699f47c13e649e9ca62861ac1d.bundle.gzip-f2d11671949f480d.part01.bin",
           "bytes": 4044230,
-          "sha256": "e7280b7b4e6a12e112b98e3c3d278749675b761511cdaa05e3a2ccf78c198fe4"
+          "sha256": "f2d11671949f480d6d87a24e2d067d3c5621a45c39a23cd38e9a850f91b712bc"
         }
       ],
       "contentType": "application/octet-stream"
     },
     {
-      "relative": "Content/0224de2db072e1a7444b40a00335f87312473d3f8b24ef159f37a388d78af848.bundle",
+      "relative": "Content/3f48030d0163511c37e0c56766af0454fe94535cb5ac6d73e783fac0437b7a9c.bundle",
       "kind": "bundle",
-      "bytes": 1301513,
-      "sha256": "0224de2db072e1a7444b40a00335f87312473d3f8b24ef159f37a388d78af848",
-      "gzipBytes": 1301007,
-      "gzipSha256": "2f538ddea6732c1fc5b5ab4ad0e1670cbf798c7890c42b553d4e81b725cc9b7e",
+      "bytes": 1301514,
+      "sha256": "3f48030d0163511c37e0c56766af0454fe94535cb5ac6d73e783fac0437b7a9c",
+      "gzipBytes": 1301006,
+      "gzipSha256": "ac732b8fcff01b4636664057f2173dbc56d380ef54f69e095349d873aaf09512",
       "parts": [
         {
-          "relative": "Content/0224de2db072e1a7444b40a00335f87312473d3f8b24ef159f37a388d78af848.bundle.gzip-2f538ddea6732c1f.part01.bin",
-          "bytes": 1301007,
-          "sha256": "2f538ddea6732c1fc5b5ab4ad0e1670cbf798c7890c42b553d4e81b725cc9b7e"
+          "relative": "Content/3f48030d0163511c37e0c56766af0454fe94535cb5ac6d73e783fac0437b7a9c.bundle.gzip-ac732b8fcff01b46.part01.bin",
+          "bytes": 1301006,
+          "sha256": "ac732b8fcff01b4636664057f2173dbc56d380ef54f69e095349d873aaf09512"
         }
       ],
       "contentType": "application/octet-stream"
     },
     {
-      "relative": "Content/bb4494d980361d42c403d6bd0e763592f40c241535cd4661998eeec457dd7a2f.bundle",
+      "relative": "Content/bcd90e6add606b00647cd5c9da4a933fbd498ab40447bef6f1f1a56cda9defa8.bundle",
       "kind": "bundle",
-      "bytes": 5297903,
-      "sha256": "bb4494d980361d42c403d6bd0e763592f40c241535cd4661998eeec457dd7a2f",
-      "gzipBytes": 5294754,
-      "gzipSha256": "57c5755377cd4021d0d8476f537a16c20885d10d915d3bc6a979ad3416c791fa",
+      "bytes": 5297904,
+      "sha256": "bcd90e6add606b00647cd5c9da4a933fbd498ab40447bef6f1f1a56cda9defa8",
+      "gzipBytes": 5294756,
+      "gzipSha256": "956229499827bdd4efff475e21bc3e6c858582a648f547680ed6fbf3e7b2668e",
       "parts": [
         {
-          "relative": "Content/bb4494d980361d42c403d6bd0e763592f40c241535cd4661998eeec457dd7a2f.bundle.gzip-57c5755377cd4021.part01.bin",
-          "bytes": 5294754,
-          "sha256": "57c5755377cd4021d0d8476f537a16c20885d10d915d3bc6a979ad3416c791fa"
+          "relative": "Content/bcd90e6add606b00647cd5c9da4a933fbd498ab40447bef6f1f1a56cda9defa8.bundle.gzip-956229499827bdd4.part01.bin",
+          "bytes": 5294756,
+          "sha256": "956229499827bdd4efff475e21bc3e6c858582a648f547680ed6fbf3e7b2668e"
         }
       ],
       "contentType": "application/octet-stream"
     },
     {
-      "relative": "Content/2e0b4712db02adae76b7c478de487dce5e313aba9c9550e096edb3105d920ed0.bundle",
+      "relative": "Content/06905a03fdcff8f6d9e776213573f8005a01b37f8505ca26b833e6abb6f31266.bundle",
       "kind": "bundle",
-      "bytes": 1323610,
-      "sha256": "2e0b4712db02adae76b7c478de487dce5e313aba9c9550e096edb3105d920ed0",
-      "gzipBytes": 1322593,
-      "gzipSha256": "055810ba493663e03e013348d13f1820c5def5cca93d7655d7492bb851be5303",
+      "bytes": 1323611,
+      "sha256": "06905a03fdcff8f6d9e776213573f8005a01b37f8505ca26b833e6abb6f31266",
+      "gzipBytes": 1322595,
+      "gzipSha256": "0c1a32612670cd258862edcdf6aebe9ffa5a0e53159161c676822a616406da15",
       "parts": [
         {
-          "relative": "Content/2e0b4712db02adae76b7c478de487dce5e313aba9c9550e096edb3105d920ed0.bundle.gzip-055810ba493663e0.part01.bin",
-          "bytes": 1322593,
-          "sha256": "055810ba493663e03e013348d13f1820c5def5cca93d7655d7492bb851be5303"
+          "relative": "Content/06905a03fdcff8f6d9e776213573f8005a01b37f8505ca26b833e6abb6f31266.bundle.gzip-0c1a32612670cd25.part01.bin",
+          "bytes": 1322595,
+          "sha256": "0c1a32612670cd258862edcdf6aebe9ffa5a0e53159161c676822a616406da15"
         }
       ],
       "contentType": "application/octet-stream"
@@ -662,7 +662,7 @@
   "loader": {
     "relative": "Build/Route88-Mobile.loader.js",
     "bytes": 20024,
-    "sha256": "a353473a1cfadeaef6f46e4e9223cbd7cdbb5628fbb22f82d1e5b7c81f6b6d78"
+    "sha256": "f9ca61e937f2c83d3171be10e53a162105076ef43dab3277b6b214ad7629eee9"
   },
   "delivery": "Same-origin gzip stream reconstruction; compiled LZ4 AssetBundles requested only when needed.",
   "preservation": "Only compiled output is packaged. No source PNG/WAV files, metadata, Unity project, private packs or credentials are published."
