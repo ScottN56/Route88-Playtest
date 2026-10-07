@@ -1,35 +1,35 @@
 {
   "schema": "route88-mobile-compiled-delivery-v2",
-  "createdUtc": "2026-10-06T23:44:11.317033+00:00",
-  "buildId": "915dd163a588f38f6084b526ad0efd1fe58a423f16811729dac8f0cc2eb9cc6b",
-  "profileId": "3857cacc266ab95de883a62b789a68fd3129e557591efc67ac481843fa971382",
-  "startupTransferBytes": 155451686,
-  "deferredTransferBytes": 49891444,
-  "startupDecodedBytes": 235792667,
-  "deferredDecodedBytes": 50810094,
+  "createdUtc": "2026-10-07T15:54:59.093171+00:00",
+  "buildId": "67a9606354470d692d1a8c3ce71b8d0d7888c9ff1eb4c5a4cbe8443ffb9985c4",
+  "profileId": "f2ecd5407cfbee41844cda5ddbb71c2356b920c84d15a4a934dec4d2e7e2cb47",
+  "startupTransferBytes": 146150066,
+  "deferredTransferBytes": 59656118,
+  "startupDecodedBytes": 227726833,
+  "deferredDecodedBytes": 60600836,
   "compiledFiles": [
     {
       "relative": "Build/Route88-Mobile.data",
       "kind": "data",
-      "bytes": 162609206,
-      "sha256": "e18137137cfe34e2f0631a02961c9cb921710a8d7e3256eed63df56b35fad62d",
-      "gzipBytes": 139587142,
-      "gzipSha256": "6f0bb3bf25726b71f60b1ff0258d98aacf7a0d2bc85738765db24ea0a1a96cd0",
+      "bytes": 153055992,
+      "sha256": "fc5a8047fe40711c09c4461fea71786b01d64f88c7f44e4a05ae408900c4f5b6",
+      "gzipBytes": 129972183,
+      "gzipSha256": "d9a3602f093d4b1b39fbfcb6fd24ec9e8474b8205df241b36cb50539013f40cf",
       "parts": [
         {
-          "relative": "Build/Route88-Mobile.data.gzip-6f0bb3bf25726b71.part01.bin",
+          "relative": "Build/Route88-Mobile.data.gzip-d9a3602f093d4b1b.part01.bin",
           "bytes": 47185920,
-          "sha256": "27a0cad0f5a2799b3287bb0250e651ea93112383b3b71d782afb44abad5c608c"
+          "sha256": "838e11f4cfda72bd459d516f44e2908a29413c1427e24f4089c8a678879c3762"
         },
         {
-          "relative": "Build/Route88-Mobile.data.gzip-6f0bb3bf25726b71.part02.bin",
+          "relative": "Build/Route88-Mobile.data.gzip-d9a3602f093d4b1b.part02.bin",
           "bytes": 47185920,
-          "sha256": "f98736f02ef048340e9e2dada0c37c8eee7ee9eee6ab64e830aed1f94fa4db27"
+          "sha256": "f474170ab19854294f9759dba23a7d1380e9b4fb8ff64759aa5695ff31c88380"
         },
         {
-          "relative": "Build/Route88-Mobile.data.gzip-6f0bb3bf25726b71.part03.bin",
-          "bytes": 45215302,
-          "sha256": "d582812006d748b0a0fa9a2e06117064a1e7ef20e059a76f65f37c24a4fe94a0"
+          "relative": "Build/Route88-Mobile.data.gzip-d9a3602f093d4b1b.part03.bin",
+          "bytes": 35600343,
+          "sha256": "ec39598f52b963598ddcbe3a437e4c70d6c9320571fb3d712be9ab53ae49369a"
         }
       ],
       "contentType": "application/octet-stream"
@@ -37,15 +37,15 @@
     {
       "relative": "Build/Route88-Mobile.wasm",
       "kind": "wasm",
-      "bytes": 72430836,
-      "sha256": "c8eb73a1525298ac47ef3507756bf93f3a78941c1c2ec9cd0acdcb4901f92fbd",
-      "gzipBytes": 15688866,
-      "gzipSha256": "e1971a3d07604bba3242849e5e73c7e9b91d42a3df3ed8d1a06ab613560a3bc3",
+      "bytes": 73916873,
+      "sha256": "cb607500c6d15ac05c89c28ef469d8dd52ae1d221baec0b6f79ff56ce28c72c5",
+      "gzipBytes": 16002143,
+      "gzipSha256": "b71a320975ac83d0947620a175b72623b7b6a1a52f87b1d488c4ed1f3da1fe5c",
       "parts": [
         {
-          "relative": "Build/Route88-Mobile.wasm.gzip-e1971a3d07604bba.part01.bin",
-          "bytes": 15688866,
-          "sha256": "e1971a3d07604bba3242849e5e73c7e9b91d42a3df3ed8d1a06ab613560a3bc3"
+          "relative": "Build/Route88-Mobile.wasm.gzip-b71a320975ac83d0.part01.bin",
+          "bytes": 16002143,
+          "sha256": "b71a320975ac83d0947620a175b72623b7b6a1a52f87b1d488c4ed1f3da1fe5c"
         }
       ],
       "contentType": "application/wasm"
@@ -53,18 +53,66 @@
     {
       "relative": "Build/Route88-Mobile.framework.js",
       "kind": "framework",
-      "bytes": 752625,
-      "sha256": "49683cb6ce35b021f63cc20342f9625988188f04a26b27c80a86c86bb664bc85",
-      "gzipBytes": 155654,
-      "gzipSha256": "fee0bb2f4defa4f59d54b6e721530444396c73ca733904f087c3252dbcb85b16",
+      "bytes": 753968,
+      "sha256": "35c01e87f82581fb7fdfd1e230e8186cc4313e59d3cf1af261bff98617c1b4ae",
+      "gzipBytes": 155716,
+      "gzipSha256": "14ca60083141ea84554fd9e9136eaa9554035016ce6a745858c9e0a50f5ba086",
       "parts": [
         {
-          "relative": "Build/Route88-Mobile.framework.js.gzip-fee0bb2f4defa4f5.part01.bin",
-          "bytes": 155654,
-          "sha256": "fee0bb2f4defa4f59d54b6e721530444396c73ca733904f087c3252dbcb85b16"
+          "relative": "Build/Route88-Mobile.framework.js.gzip-14ca60083141ea84.part01.bin",
+          "bytes": 155716,
+          "sha256": "14ca60083141ea84554fd9e9136eaa9554035016ce6a745858c9e0a50f5ba086"
         }
       ],
       "contentType": "application/javascript"
+    },
+    {
+      "relative": "Content/5a3694bd42166bb8743391cf1595b9ecea287ad5049558386fd02ca83a05b83a.bundle",
+      "kind": "bundle",
+      "bytes": 1206720,
+      "sha256": "5a3694bd42166bb8743391cf1595b9ecea287ad5049558386fd02ca83a05b83a",
+      "gzipBytes": 1206377,
+      "gzipSha256": "89944366b3caeaf18bc2fb40c208b73d13d66584b32c0b45e0079c1adbc5f903",
+      "parts": [
+        {
+          "relative": "Content/5a3694bd42166bb8743391cf1595b9ecea287ad5049558386fd02ca83a05b83a.bundle.gzip-89944366b3caeaf1.part01.bin",
+          "bytes": 1206377,
+          "sha256": "89944366b3caeaf18bc2fb40c208b73d13d66584b32c0b45e0079c1adbc5f903"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
+      "relative": "Content/697c8f3005f117b7b2670ec7a4ee0654d521490502e20b011364dff66109460c.bundle",
+      "kind": "bundle",
+      "bytes": 4494979,
+      "sha256": "697c8f3005f117b7b2670ec7a4ee0654d521490502e20b011364dff66109460c",
+      "gzipBytes": 4493176,
+      "gzipSha256": "88461c81a5919151867008fb2a0747338291b6b9cb4247db00121f74405e3667",
+      "parts": [
+        {
+          "relative": "Content/697c8f3005f117b7b2670ec7a4ee0654d521490502e20b011364dff66109460c.bundle.gzip-88461c81a5919151.part01.bin",
+          "bytes": 4493176,
+          "sha256": "88461c81a5919151867008fb2a0747338291b6b9cb4247db00121f74405e3667"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
+      "relative": "Content/90b2372d6591f6c8f1cede8ab99ca16ba2bbe67c99cbe7fae35c09a157dbe64d.bundle",
+      "kind": "bundle",
+      "bytes": 1585832,
+      "sha256": "90b2372d6591f6c8f1cede8ab99ca16ba2bbe67c99cbe7fae35c09a157dbe64d",
+      "gzipBytes": 1584699,
+      "gzipSha256": "1012c6ed177a63a2221527db01718c4e3715e8f6e2bd8af95f21833c1db10d8f",
+      "parts": [
+        {
+          "relative": "Content/90b2372d6591f6c8f1cede8ab99ca16ba2bbe67c99cbe7fae35c09a157dbe64d.bundle.gzip-1012c6ed177a63a2.part01.bin",
+          "bytes": 1584699,
+          "sha256": "1012c6ed177a63a2221527db01718c4e3715e8f6e2bd8af95f21833c1db10d8f"
+        }
+      ],
+      "contentType": "application/octet-stream"
     },
     {
       "relative": "Content/69ff5656e8ab65cc883b365926d12a5e14ce7b699f47c13e649e9ca62861ac1d.bundle",
@@ -110,6 +158,22 @@
           "relative": "Content/bcd90e6add606b00647cd5c9da4a933fbd498ab40447bef6f1f1a56cda9defa8.bundle.gzip-956229499827bdd4.part01.bin",
           "bytes": 5294756,
           "sha256": "956229499827bdd4efff475e21bc3e6c858582a648f547680ed6fbf3e7b2668e"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
+      "relative": "Content/65c82955900de9f52f07f1753aed77e881e272bc451ffc4b2d38e53853c7ceb1.bundle",
+      "kind": "bundle",
+      "bytes": 1100199,
+      "sha256": "65c82955900de9f52f07f1753aed77e881e272bc451ffc4b2d38e53853c7ceb1",
+      "gzipBytes": 1099531,
+      "gzipSha256": "eb38bbfa54b04075b7c93648edb1ac2da27a29f6e7cb909695d1b1e4dcc60176",
+      "parts": [
+        {
+          "relative": "Content/65c82955900de9f52f07f1753aed77e881e272bc451ffc4b2d38e53853c7ceb1.bundle.gzip-eb38bbfa54b04075.part01.bin",
+          "bytes": 1099531,
+          "sha256": "eb38bbfa54b04075b7c93648edb1ac2da27a29f6e7cb909695d1b1e4dcc60176"
         }
       ],
       "contentType": "application/octet-stream"
@@ -259,6 +323,22 @@
       "contentType": "application/octet-stream"
     },
     {
+      "relative": "Content/454a59786fd706b552c29dd5a4f0af84a22d481044698c29e5090f0a89a0dd29.bundle",
+      "kind": "bundle",
+      "bytes": 701346,
+      "sha256": "454a59786fd706b552c29dd5a4f0af84a22d481044698c29e5090f0a89a0dd29",
+      "gzipBytes": 689033,
+      "gzipSha256": "c2fb165aba785be48bdeb7526bff0b3033630650b15db9fe6904b6d2df0949d9",
+      "parts": [
+        {
+          "relative": "Content/454a59786fd706b552c29dd5a4f0af84a22d481044698c29e5090f0a89a0dd29.bundle.gzip-c2fb165aba785be4.part01.bin",
+          "bytes": 689033,
+          "sha256": "c2fb165aba785be48bdeb7526bff0b3033630650b15db9fe6904b6d2df0949d9"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
       "relative": "Content/ffa2093c99edec30af4a05f75be093839576f36ca1f1dc187defb0078ec1fe25.bundle",
       "kind": "bundle",
       "bytes": 701606,
@@ -286,6 +366,22 @@
           "relative": "Content/a3a4dcbe6fee2a37f40d93676d332404cc867b8320b3e2931d3cdf4957d8c997.bundle.gzip-c485e512d81727e5.part01.bin",
           "bytes": 689799,
           "sha256": "c485e512d81727e51bb6c6871dc4bb9e63421e0dd38a517305dd5ce51b66352f"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
+      "relative": "Content/b75acdceb83149be3a239f2e490ac44ffbf42d1c3906c23539cd71bf94464c51.bundle",
+      "kind": "bundle",
+      "bytes": 701666,
+      "sha256": "b75acdceb83149be3a239f2e490ac44ffbf42d1c3906c23539cd71bf94464c51",
+      "gzipBytes": 691858,
+      "gzipSha256": "fbb02176e9608974e75200161ccd49cf4315a6b17620c77226f1607b8dd1e8f3",
+      "parts": [
+        {
+          "relative": "Content/b75acdceb83149be3a239f2e490ac44ffbf42d1c3906c23539cd71bf94464c51.bundle.gzip-fbb02176e9608974.part01.bin",
+          "bytes": 691858,
+          "sha256": "fbb02176e9608974e75200161ccd49cf4315a6b17620c77226f1607b8dd1e8f3"
         }
       ],
       "contentType": "application/octet-stream"
@@ -950,8 +1046,956 @@
   "loader": {
     "relative": "Build/Route88-Mobile.loader.js",
     "bytes": 20024,
-    "sha256": "638c4a44cb9e0012786c4ca07c04dc12f04691d4f90050dfefc7101d89bc620b"
+    "sha256": "2a7bfdc599c6c8ebf1539e944489db602103c698cb51076f9e9247d6991f02c9"
   },
   "delivery": "Same-origin gzip stream reconstruction; compiled LZ4 AssetBundles requested only when needed.",
-  "preservation": "Only compiled output is packaged. No source PNG/WAV files, metadata, Unity project, private packs or credentials are published."
+  "preservation": "Only compiled output is packaged. No source PNG/WAV files, metadata, Unity project, private packs or credentials are published.",
+  "packagingInputs": {
+    "compiledAuditSha256": "d0bfc67d1c9c310336018472383ffcbe8fc7f0ecece3e26555da0c88fe513ef0",
+    "templates": {
+      "phone-startup.template.html": "0c7165c48159dcf2985de1eb01a3e59ddc92937528277d8835976301039f2bc9",
+      "route88-sw.template.js": "83e99b754848146ada2193151a9d5ae74c9bb71bab05c247149dba893eb2eb02"
+    },
+    "controlCaption": "Player-selected aiming and conditional fire; no runtime JavaScript altered.",
+    "originalCommonAmmo": {
+      "resource": "Outbreak/Art/d813ccde99550c5be6cd",
+      "sourceDimensions": [
+        6,
+        4
+      ],
+      "guid": "aceff17635c68824f833977f0ec4cbf2",
+      "packedEvidence": {
+        "pack": "resources.assets",
+        "path": "Assets/Outbreak/Resources/Outbreak/Art/d813ccde99550c5be6cd.png",
+        "guid": "aceff17635c68824f833977f0ec4cbf2",
+        "classID": 28,
+        "packedBytes": 164,
+        "fileID": 478,
+        "offset": 262511920
+      },
+      "evidenceKind": "ACTUAL_BUILDREPORT_PACKED_TEXTURE2D_ORIGINAL_COMMON_SOURCE_AND_IMPORT_POLICY",
+      "serializedObjectInspection": "NOT_INSPECTED_MISSING_TYPE_TREES",
+      "warmWebGLImportPolicy": {
+        "schema": "route88-original-common-ammo-approved-webgl-import-policy-v1",
+        "sourceMetadata": {
+          "path": "D:\\Route88\\Assets\\Outbreak\\Resources\\Outbreak\\Art\\d813ccde99550c5be6cd.png.meta",
+          "bytes": 3422,
+          "sha256": "abeb28305987ea91950691430a270cadfa8c785b81d48e410dcf4507481ab358"
+        },
+        "warmMetadata": {
+          "path": "D:\\CodexWork\\Route88-PhonePlaytest-20261005\\Assets\\Outbreak\\Resources\\Outbreak\\Art\\d813ccde99550c5be6cd.png.meta",
+          "bytes": 3423,
+          "sha256": "2b74579f6d7a49be3557287bdf7f44e63f671a7491b36a22426609ecdbe382bf"
+        },
+        "originalCommonInputHelper": {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\ContinuousLevel-MobilePipeline-R22-R3\\continuous_delivery_contract.py",
+          "bytes": 4768,
+          "sha256": "97556a01a60a7604a89799011a17c73b3dc35bb1c1968fb6d0095a2fd2e0d10d"
+        },
+        "knownPhoneImporter": {
+          "path": "D:\\CodexWork\\Route88-PhonePlaytest-20261005\\Assets\\Outbreak\\Editor\\Route88PhoneBuild.cs",
+          "bytes": 4659,
+          "sha256": "bf586b56bda588c4f83b003911bd32d356f4c5b19f52aa210c47572929f514ae"
+        },
+        "policyValidator": {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\ContinuousLevel-MobilePipeline-R22-R3\\common_ammo_webgl_policy_R2.py",
+          "bytes": 6894,
+          "sha256": "8b0b8232f29fde430dca21a5f700b130f143859058ffc8ee567e8911762da388"
+        },
+        "webGL": {
+          "buildTarget": "WebGL",
+          "maxTextureSize": "2048",
+          "resizeAlgorithm": "0",
+          "textureFormat": "48",
+          "textureCompression": "2",
+          "compressionQuality": "100",
+          "crunchedCompression": "0",
+          "allowsAlphaSplitting": "0",
+          "overridden": "1",
+          "ignorePlatformSupport": "0",
+          "androidETC2FallbackOverride": "0",
+          "forceMaximumCompressionQuality_BC6H_BC7": "0"
+        },
+        "nonWebGLMetadataPreserved": true,
+        "onlyApprovedWebGLFieldsChanged": true,
+        "approvedChanges": {
+          "textureFormat": {
+            "source": "-1",
+            "warm": "48"
+          },
+          "textureCompression": {
+            "source": "1",
+            "warm": "2"
+          },
+          "compressionQuality": {
+            "source": "50",
+            "warm": "100"
+          },
+          "overridden": {
+            "source": "0",
+            "warm": "1"
+          }
+        },
+        "scope": "Exact original Main PNG/meta/GUID and full Warm metadata reconstruction changing only four known WebGL fields. Actual serialized Texture2D fields remain uninspected without resident TypeTrees."
+      }
+    },
+    "residentPickupAudio": {
+      "dependencies": [
+        {
+          "originalName": "Audio/confirmation_001.ogg",
+          "resource": "Outbreak/Audio/9801dbad21b9aab80733",
+          "path": "Assets/Outbreak/Resources/Outbreak/Audio/9801dbad21b9aab80733.ogg",
+          "guid": "e8454c17035647b44858df41bd9b799e",
+          "sourceSha256": "063564703b6094d70718a3e787a55cc9141611e4ecd6b6637f8828f79b4a8c3a",
+          "sourceMetaSha256": "2c86f18bf8b579f021e6e062b984c2c3e35eed9a0a7111a02ac9efe7f4f6738e",
+          "sourceBytes": 8968,
+          "sourceMetaBytes": 488,
+          "source": "D:\\Route88\\Assets\\Outbreak\\Resources\\Outbreak\\Audio\\9801dbad21b9aab80733.ogg",
+          "warm": "D:\\CodexWork\\Route88-PhonePlaytest-20261005\\Assets\\Outbreak\\Resources\\Outbreak\\Audio\\9801dbad21b9aab80733.ogg",
+          "warmSha256": "063564703b6094d70718a3e787a55cc9141611e4ecd6b6637f8828f79b4a8c3a",
+          "warmMetaSha256": "2c86f18bf8b579f021e6e062b984c2c3e35eed9a0a7111a02ac9efe7f4f6738e",
+          "importPolicy": {
+            "loadType": "1",
+            "sampleRateSetting": "0",
+            "sampleRateOverride": "44100",
+            "compressionFormat": "1",
+            "quality": "0.65",
+            "conversionMode": "0",
+            "preloadAudioData": "1"
+          },
+          "deliveryClass": "INHERITED_RESIDENT_DEPENDENCY_NOT_IN_459_COPY_UNION",
+          "copiedByThisSync": false,
+          "originalOgg": {
+            "channels": 1,
+            "frequency": 44100,
+            "finalGranule": 12782,
+            "duration": 0.28984126984126984,
+            "pcmDecoded": false,
+            "oggCRCInspected": false
+          }
+        },
+        {
+          "originalName": "Audio/confirmation_002.ogg",
+          "resource": "Outbreak/Audio/fcb84bbeb3d139478000",
+          "path": "Assets/Outbreak/Resources/Outbreak/Audio/fcb84bbeb3d139478000.ogg",
+          "guid": "ee8b05ee54a2b444f89be44689e6f306",
+          "sourceSha256": "33b17a9a9a2397c62b285c52c33a907fdffb476909c99e42dde603f6a7a8b12c",
+          "sourceMetaSha256": "0026a847600d6a6337d821d9096ab5e17bbd84bc82a4c797d5e71f5ea0571828",
+          "sourceBytes": 14169,
+          "sourceMetaBytes": 488,
+          "source": "D:\\Route88\\Assets\\Outbreak\\Resources\\Outbreak\\Audio\\fcb84bbeb3d139478000.ogg",
+          "warm": "D:\\CodexWork\\Route88-PhonePlaytest-20261005\\Assets\\Outbreak\\Resources\\Outbreak\\Audio\\fcb84bbeb3d139478000.ogg",
+          "warmSha256": "33b17a9a9a2397c62b285c52c33a907fdffb476909c99e42dde603f6a7a8b12c",
+          "warmMetaSha256": "0026a847600d6a6337d821d9096ab5e17bbd84bc82a4c797d5e71f5ea0571828",
+          "importPolicy": {
+            "loadType": "1",
+            "sampleRateSetting": "0",
+            "sampleRateOverride": "44100",
+            "compressionFormat": "1",
+            "quality": "0.65",
+            "conversionMode": "0",
+            "preloadAudioData": "1"
+          },
+          "deliveryClass": "INHERITED_RESIDENT_DEPENDENCY_NOT_IN_459_COPY_UNION",
+          "copiedByThisSync": false,
+          "originalOgg": {
+            "channels": 1,
+            "frequency": 44100,
+            "finalGranule": 23770,
+            "duration": 0.5390022675736962,
+            "pcmDecoded": false,
+            "oggCRCInspected": false
+          }
+        },
+        {
+          "originalName": "Audio/confirmation_003.ogg",
+          "resource": "Outbreak/Audio/6b6448fb2e530529fee2",
+          "path": "Assets/Outbreak/Resources/Outbreak/Audio/6b6448fb2e530529fee2.ogg",
+          "guid": "d5528ed254b304b43b942a9524942c0f",
+          "sourceSha256": "3091bf0be0497f825769ee0733ca7bdc3bcd59bd6c6e8f2ba8f93d580ff38022",
+          "sourceMetaSha256": "21de505d083e1c7dabe5124aa21e0d7c3918ef99d27a6032285bb0338b901686",
+          "sourceBytes": 9535,
+          "sourceMetaBytes": 488,
+          "source": "D:\\Route88\\Assets\\Outbreak\\Resources\\Outbreak\\Audio\\6b6448fb2e530529fee2.ogg",
+          "warm": "D:\\CodexWork\\Route88-PhonePlaytest-20261005\\Assets\\Outbreak\\Resources\\Outbreak\\Audio\\6b6448fb2e530529fee2.ogg",
+          "warmSha256": "3091bf0be0497f825769ee0733ca7bdc3bcd59bd6c6e8f2ba8f93d580ff38022",
+          "warmMetaSha256": "21de505d083e1c7dabe5124aa21e0d7c3918ef99d27a6032285bb0338b901686",
+          "importPolicy": {
+            "loadType": "1",
+            "sampleRateSetting": "0",
+            "sampleRateOverride": "44100",
+            "compressionFormat": "1",
+            "quality": "0.65",
+            "conversionMode": "0",
+            "preloadAudioData": "1"
+          },
+          "deliveryClass": "INHERITED_RESIDENT_DEPENDENCY_NOT_IN_459_COPY_UNION",
+          "copiedByThisSync": false,
+          "originalOgg": {
+            "channels": 1,
+            "frequency": 44100,
+            "finalGranule": 14201,
+            "duration": 0.3220181405895692,
+            "pcmDecoded": false,
+            "oggCRCInspected": false
+          }
+        },
+        {
+          "originalName": "Audio/confirmation_004.ogg",
+          "resource": "Outbreak/Audio/fb9f58f6f5b248e0654c",
+          "path": "Assets/Outbreak/Resources/Outbreak/Audio/fb9f58f6f5b248e0654c.ogg",
+          "guid": "b8841d3f21510fe40886ab923e822b3b",
+          "sourceSha256": "568967a3d9f8a8f6af54ea01729c4882284308f2a27d78c07ffd7ee0d6951661",
+          "sourceMetaSha256": "8b305935f4a4ede5e2163acaa35ebeb47b2cc13c358c63a7476dc9c1257d6896",
+          "sourceBytes": 12391,
+          "sourceMetaBytes": 488,
+          "source": "D:\\Route88\\Assets\\Outbreak\\Resources\\Outbreak\\Audio\\fb9f58f6f5b248e0654c.ogg",
+          "warm": "D:\\CodexWork\\Route88-PhonePlaytest-20261005\\Assets\\Outbreak\\Resources\\Outbreak\\Audio\\fb9f58f6f5b248e0654c.ogg",
+          "warmSha256": "568967a3d9f8a8f6af54ea01729c4882284308f2a27d78c07ffd7ee0d6951661",
+          "warmMetaSha256": "8b305935f4a4ede5e2163acaa35ebeb47b2cc13c358c63a7476dc9c1257d6896",
+          "importPolicy": {
+            "loadType": "1",
+            "sampleRateSetting": "0",
+            "sampleRateOverride": "44100",
+            "compressionFormat": "1",
+            "quality": "0.65",
+            "conversionMode": "0",
+            "preloadAudioData": "1"
+          },
+          "deliveryClass": "INHERITED_RESIDENT_DEPENDENCY_NOT_IN_459_COPY_UNION",
+          "copiedByThisSync": false,
+          "originalOgg": {
+            "channels": 1,
+            "frequency": 44100,
+            "finalGranule": 21627,
+            "duration": 0.4904081632653061,
+            "pcmDecoded": false,
+            "oggCRCInspected": false
+          }
+        }
+      ],
+      "compiledClips": [
+        {
+          "originalName": "Audio/confirmation_001.ogg",
+          "resource": "Outbreak/Audio/9801dbad21b9aab80733",
+          "path": "Assets/Outbreak/Resources/Outbreak/Audio/9801dbad21b9aab80733.ogg",
+          "guid": "e8454c17035647b44858df41bd9b799e",
+          "sourceSha256": "063564703b6094d70718a3e787a55cc9141611e4ecd6b6637f8828f79b4a8c3a",
+          "sourceMetaSha256": "2c86f18bf8b579f021e6e062b984c2c3e35eed9a0a7111a02ac9efe7f4f6738e",
+          "sourceBytes": 8968,
+          "sourceMetaBytes": 488,
+          "source": "D:\\Route88\\Assets\\Outbreak\\Resources\\Outbreak\\Audio\\9801dbad21b9aab80733.ogg",
+          "warm": "D:\\CodexWork\\Route88-PhonePlaytest-20261005\\Assets\\Outbreak\\Resources\\Outbreak\\Audio\\9801dbad21b9aab80733.ogg",
+          "warmSha256": "063564703b6094d70718a3e787a55cc9141611e4ecd6b6637f8828f79b4a8c3a",
+          "warmMetaSha256": "2c86f18bf8b579f021e6e062b984c2c3e35eed9a0a7111a02ac9efe7f4f6738e",
+          "importPolicy": {
+            "loadType": "1",
+            "sampleRateSetting": "0",
+            "sampleRateOverride": "44100",
+            "compressionFormat": "1",
+            "quality": "0.65",
+            "conversionMode": "0",
+            "preloadAudioData": "1"
+          },
+          "deliveryClass": "INHERITED_RESIDENT_DEPENDENCY_NOT_IN_459_COPY_UNION",
+          "copiedByThisSync": false,
+          "originalOgg": {
+            "channels": 1,
+            "frequency": 44100,
+            "finalGranule": 12782,
+            "duration": 0.28984126984126984,
+            "pcmDecoded": false,
+            "oggCRCInspected": false
+          },
+          "evidenceKind": "ACTUAL_PACKED_AUDIOCLIP_SAME_BUILD_SCHEMA_AND_REFERENCED_PAYLOAD",
+          "packedEvidence": {
+            "pack": "resources.assets",
+            "path": "Assets/Outbreak/Resources/Outbreak/Audio/9801dbad21b9aab80733.ogg",
+            "guid": "e8454c17035647b44858df41bd9b799e",
+            "classID": 83,
+            "packedBytes": 100,
+            "fileID": 879,
+            "offset": 378053040
+          },
+          "packedPayloadEvidence": {
+            "pack": "resources.resource",
+            "path": "Assets/Outbreak/Resources/Outbreak/Audio/9801dbad21b9aab80733.ogg",
+            "guid": "e8454c17035647b44858df41bd9b799e",
+            "classID": 83,
+            "packedBytes": 6888,
+            "fileID": 0,
+            "offset": 4893008
+          },
+          "objectId": 879,
+          "objectOffset": 378053040,
+          "objectBytes": 100,
+          "values": {
+            "m_Name": "9801dbad21b9aab80733",
+            "m_LoadType": 1,
+            "m_Channels": 1,
+            "m_Frequency": 44100,
+            "m_BitsPerSample": 16,
+            "m_Length": 0.28984126448631287,
+            "m_IsTrackerFormat": 0,
+            "m_Ambisonic": 0,
+            "m_SubsoundIndex": 0,
+            "m_PreloadAudioData": 1,
+            "m_LoadInBackground": 0,
+            "m_Legacy3D": 1,
+            "m_Source": "resources.resource",
+            "m_Offset": 4893008,
+            "m_Size": 6888,
+            "m_CompressionFormat": 7
+          },
+          "payload": {
+            "stream": "resources.resource",
+            "container": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-startup\\Route88-Mobile.data",
+            "containerSha256": "fc5a8047fe40711c09c4461fea71786b01d64f88c7f44e4a05ae408900c4f5b6",
+            "streamEvidence": "ACTUAL_STARTUP_WEBDATA_SEGMENT",
+            "streamOffset": 133074146,
+            "streamSha256": "52359bf9c216d02c36b01a0f2cb6b659f9d1c2d050583ea7e6f32294d210f53c",
+            "streamBytes": 5284125,
+            "offset": 4893008,
+            "bytes": 6888,
+            "payloadSha256": "594a5813d81398f47260bf7dfcf05a3b52c1adaa2a6d6c80609eaf4d1039376e",
+            "signatureHex": "00000018667479706d70343200000000",
+            "payloadContainer": "ISO_BASE_MEDIA_MP4",
+            "topLevelAtoms": [
+              {
+                "type": "ftyp",
+                "offset": 0,
+                "bytes": 24,
+                "headerBytes": 8
+              },
+              {
+                "type": "uuid",
+                "offset": 24,
+                "bytes": 39,
+                "headerBytes": 8
+              },
+              {
+                "type": "mdat",
+                "offset": 63,
+                "bytes": 6143,
+                "headerBytes": 8
+              },
+              {
+                "type": "moov",
+                "offset": 6206,
+                "bytes": 682,
+                "headerBytes": 8
+              }
+            ],
+            "audioPCMDecoded": false,
+            "sourceEncodingEquality": "NOT_ASSERTED_UNITY_IMPORTED_OR_TRANSCODED_PAYLOAD"
+          },
+          "buildReportSha256": "7ea0fe2c39aa4d47e7dafb38593ecca02c0e2e88618f9a904527ca8a35a221b7",
+          "startupDataSha256": "fc5a8047fe40711c09c4461fea71786b01d64f88c7f44e4a05ae408900c4f5b6",
+          "serializedFileSha256": "bad6c7798902fb5f4f3a4d960d671899ac2a6d5440145d9f9e262960283d96dc",
+          "audioTypeHashBytes": "57a6370a001d5449abd37c2184ec5138",
+          "objectSchemaEvidence": "SAME_BUILD_INLINE_AUDIOCLIP_TYPETREE_VALIDATED_AGAINST_EIGHT_BINARY2TEXT_CONTROLS",
+          "resourceObjectAddress": "NOT_ASSERTED_RESOURCES_LOOKUP_REQUIRES_ACTUAL_RUNTIME"
+        },
+        {
+          "originalName": "Audio/confirmation_002.ogg",
+          "resource": "Outbreak/Audio/fcb84bbeb3d139478000",
+          "path": "Assets/Outbreak/Resources/Outbreak/Audio/fcb84bbeb3d139478000.ogg",
+          "guid": "ee8b05ee54a2b444f89be44689e6f306",
+          "sourceSha256": "33b17a9a9a2397c62b285c52c33a907fdffb476909c99e42dde603f6a7a8b12c",
+          "sourceMetaSha256": "0026a847600d6a6337d821d9096ab5e17bbd84bc82a4c797d5e71f5ea0571828",
+          "sourceBytes": 14169,
+          "sourceMetaBytes": 488,
+          "source": "D:\\Route88\\Assets\\Outbreak\\Resources\\Outbreak\\Audio\\fcb84bbeb3d139478000.ogg",
+          "warm": "D:\\CodexWork\\Route88-PhonePlaytest-20261005\\Assets\\Outbreak\\Resources\\Outbreak\\Audio\\fcb84bbeb3d139478000.ogg",
+          "warmSha256": "33b17a9a9a2397c62b285c52c33a907fdffb476909c99e42dde603f6a7a8b12c",
+          "warmMetaSha256": "0026a847600d6a6337d821d9096ab5e17bbd84bc82a4c797d5e71f5ea0571828",
+          "importPolicy": {
+            "loadType": "1",
+            "sampleRateSetting": "0",
+            "sampleRateOverride": "44100",
+            "compressionFormat": "1",
+            "quality": "0.65",
+            "conversionMode": "0",
+            "preloadAudioData": "1"
+          },
+          "deliveryClass": "INHERITED_RESIDENT_DEPENDENCY_NOT_IN_459_COPY_UNION",
+          "copiedByThisSync": false,
+          "originalOgg": {
+            "channels": 1,
+            "frequency": 44100,
+            "finalGranule": 23770,
+            "duration": 0.5390022675736962,
+            "pcmDecoded": false,
+            "oggCRCInspected": false
+          },
+          "evidenceKind": "ACTUAL_PACKED_AUDIOCLIP_SAME_BUILD_SCHEMA_AND_REFERENCED_PAYLOAD",
+          "packedEvidence": {
+            "pack": "resources.assets",
+            "path": "Assets/Outbreak/Resources/Outbreak/Audio/fcb84bbeb3d139478000.ogg",
+            "guid": "ee8b05ee54a2b444f89be44689e6f306",
+            "classID": 83,
+            "packedBytes": 100,
+            "fileID": 883,
+            "offset": 378053488
+          },
+          "packedPayloadEvidence": {
+            "pack": "resources.resource",
+            "path": "Assets/Outbreak/Resources/Outbreak/Audio/fcb84bbeb3d139478000.ogg",
+            "guid": "ee8b05ee54a2b444f89be44689e6f306",
+            "classID": 83,
+            "packedBytes": 11995,
+            "fileID": 0,
+            "offset": 5035504
+          },
+          "objectId": 883,
+          "objectOffset": 378053488,
+          "objectBytes": 100,
+          "values": {
+            "m_Name": "fcb84bbeb3d139478000",
+            "m_LoadType": 1,
+            "m_Channels": 1,
+            "m_Frequency": 44100,
+            "m_BitsPerSample": 16,
+            "m_Length": 0.5390022397041321,
+            "m_IsTrackerFormat": 0,
+            "m_Ambisonic": 0,
+            "m_SubsoundIndex": 0,
+            "m_PreloadAudioData": 1,
+            "m_LoadInBackground": 0,
+            "m_Legacy3D": 1,
+            "m_Source": "resources.resource",
+            "m_Offset": 5035504,
+            "m_Size": 11995,
+            "m_CompressionFormat": 7
+          },
+          "payload": {
+            "stream": "resources.resource",
+            "container": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-startup\\Route88-Mobile.data",
+            "containerSha256": "fc5a8047fe40711c09c4461fea71786b01d64f88c7f44e4a05ae408900c4f5b6",
+            "streamEvidence": "ACTUAL_STARTUP_WEBDATA_SEGMENT",
+            "streamOffset": 133074146,
+            "streamSha256": "52359bf9c216d02c36b01a0f2cb6b659f9d1c2d050583ea7e6f32294d210f53c",
+            "streamBytes": 5284125,
+            "offset": 5035504,
+            "bytes": 11995,
+            "payloadSha256": "b6c6ae8c096285b126f8cd58e4eb2bc1a8a1758d3d112b5951af08262f442e0d",
+            "signatureHex": "00000018667479706d70343200000000",
+            "payloadContainer": "ISO_BASE_MEDIA_MP4",
+            "topLevelAtoms": [
+              {
+                "type": "ftyp",
+                "offset": 0,
+                "bytes": 24,
+                "headerBytes": 8
+              },
+              {
+                "type": "uuid",
+                "offset": 24,
+                "bytes": 39,
+                "headerBytes": 8
+              },
+              {
+                "type": "mdat",
+                "offset": 63,
+                "bytes": 11206,
+                "headerBytes": 8
+              },
+              {
+                "type": "moov",
+                "offset": 11269,
+                "bytes": 726,
+                "headerBytes": 8
+              }
+            ],
+            "audioPCMDecoded": false,
+            "sourceEncodingEquality": "NOT_ASSERTED_UNITY_IMPORTED_OR_TRANSCODED_PAYLOAD"
+          },
+          "buildReportSha256": "7ea0fe2c39aa4d47e7dafb38593ecca02c0e2e88618f9a904527ca8a35a221b7",
+          "startupDataSha256": "fc5a8047fe40711c09c4461fea71786b01d64f88c7f44e4a05ae408900c4f5b6",
+          "serializedFileSha256": "bad6c7798902fb5f4f3a4d960d671899ac2a6d5440145d9f9e262960283d96dc",
+          "audioTypeHashBytes": "57a6370a001d5449abd37c2184ec5138",
+          "objectSchemaEvidence": "SAME_BUILD_INLINE_AUDIOCLIP_TYPETREE_VALIDATED_AGAINST_EIGHT_BINARY2TEXT_CONTROLS",
+          "resourceObjectAddress": "NOT_ASSERTED_RESOURCES_LOOKUP_REQUIRES_ACTUAL_RUNTIME"
+        },
+        {
+          "originalName": "Audio/confirmation_003.ogg",
+          "resource": "Outbreak/Audio/6b6448fb2e530529fee2",
+          "path": "Assets/Outbreak/Resources/Outbreak/Audio/6b6448fb2e530529fee2.ogg",
+          "guid": "d5528ed254b304b43b942a9524942c0f",
+          "sourceSha256": "3091bf0be0497f825769ee0733ca7bdc3bcd59bd6c6e8f2ba8f93d580ff38022",
+          "sourceMetaSha256": "21de505d083e1c7dabe5124aa21e0d7c3918ef99d27a6032285bb0338b901686",
+          "sourceBytes": 9535,
+          "sourceMetaBytes": 488,
+          "source": "D:\\Route88\\Assets\\Outbreak\\Resources\\Outbreak\\Audio\\6b6448fb2e530529fee2.ogg",
+          "warm": "D:\\CodexWork\\Route88-PhonePlaytest-20261005\\Assets\\Outbreak\\Resources\\Outbreak\\Audio\\6b6448fb2e530529fee2.ogg",
+          "warmSha256": "3091bf0be0497f825769ee0733ca7bdc3bcd59bd6c6e8f2ba8f93d580ff38022",
+          "warmMetaSha256": "21de505d083e1c7dabe5124aa21e0d7c3918ef99d27a6032285bb0338b901686",
+          "importPolicy": {
+            "loadType": "1",
+            "sampleRateSetting": "0",
+            "sampleRateOverride": "44100",
+            "compressionFormat": "1",
+            "quality": "0.65",
+            "conversionMode": "0",
+            "preloadAudioData": "1"
+          },
+          "deliveryClass": "INHERITED_RESIDENT_DEPENDENCY_NOT_IN_459_COPY_UNION",
+          "copiedByThisSync": false,
+          "originalOgg": {
+            "channels": 1,
+            "frequency": 44100,
+            "finalGranule": 14201,
+            "duration": 0.3220181405895692,
+            "pcmDecoded": false,
+            "oggCRCInspected": false
+          },
+          "evidenceKind": "ACTUAL_PACKED_AUDIOCLIP_SAME_BUILD_SCHEMA_AND_REFERENCED_PAYLOAD",
+          "packedEvidence": {
+            "pack": "resources.assets",
+            "path": "Assets/Outbreak/Resources/Outbreak/Audio/6b6448fb2e530529fee2.ogg",
+            "guid": "d5528ed254b304b43b942a9524942c0f",
+            "classID": 83,
+            "packedBytes": 100,
+            "fileID": 866,
+            "offset": 378051600
+          },
+          "packedPayloadEvidence": {
+            "pack": "resources.resource",
+            "path": "Assets/Outbreak/Resources/Outbreak/Audio/6b6448fb2e530529fee2.ogg",
+            "guid": "d5528ed254b304b43b942a9524942c0f",
+            "classID": 83,
+            "packedBytes": 7267,
+            "fileID": 0,
+            "offset": 4503648
+          },
+          "objectId": 866,
+          "objectOffset": 378051600,
+          "objectBytes": 100,
+          "values": {
+            "m_Name": "6b6448fb2e530529fee2",
+            "m_LoadType": 1,
+            "m_Channels": 1,
+            "m_Frequency": 44100,
+            "m_BitsPerSample": 16,
+            "m_Length": 0.3220181465148926,
+            "m_IsTrackerFormat": 0,
+            "m_Ambisonic": 0,
+            "m_SubsoundIndex": 0,
+            "m_PreloadAudioData": 1,
+            "m_LoadInBackground": 0,
+            "m_Legacy3D": 1,
+            "m_Source": "resources.resource",
+            "m_Offset": 4503648,
+            "m_Size": 7267,
+            "m_CompressionFormat": 7
+          },
+          "payload": {
+            "stream": "resources.resource",
+            "container": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-startup\\Route88-Mobile.data",
+            "containerSha256": "fc5a8047fe40711c09c4461fea71786b01d64f88c7f44e4a05ae408900c4f5b6",
+            "streamEvidence": "ACTUAL_STARTUP_WEBDATA_SEGMENT",
+            "streamOffset": 133074146,
+            "streamSha256": "52359bf9c216d02c36b01a0f2cb6b659f9d1c2d050583ea7e6f32294d210f53c",
+            "streamBytes": 5284125,
+            "offset": 4503648,
+            "bytes": 7267,
+            "payloadSha256": "22502dd484014dc3952aae8445de2d8ca2aa426bf3a9a552de46db053e913a1d",
+            "signatureHex": "00000018667479706d70343200000000",
+            "payloadContainer": "ISO_BASE_MEDIA_MP4",
+            "topLevelAtoms": [
+              {
+                "type": "ftyp",
+                "offset": 0,
+                "bytes": 24,
+                "headerBytes": 8
+              },
+              {
+                "type": "uuid",
+                "offset": 24,
+                "bytes": 39,
+                "headerBytes": 8
+              },
+              {
+                "type": "mdat",
+                "offset": 63,
+                "bytes": 6518,
+                "headerBytes": 8
+              },
+              {
+                "type": "moov",
+                "offset": 6581,
+                "bytes": 686,
+                "headerBytes": 8
+              }
+            ],
+            "audioPCMDecoded": false,
+            "sourceEncodingEquality": "NOT_ASSERTED_UNITY_IMPORTED_OR_TRANSCODED_PAYLOAD"
+          },
+          "buildReportSha256": "7ea0fe2c39aa4d47e7dafb38593ecca02c0e2e88618f9a904527ca8a35a221b7",
+          "startupDataSha256": "fc5a8047fe40711c09c4461fea71786b01d64f88c7f44e4a05ae408900c4f5b6",
+          "serializedFileSha256": "bad6c7798902fb5f4f3a4d960d671899ac2a6d5440145d9f9e262960283d96dc",
+          "audioTypeHashBytes": "57a6370a001d5449abd37c2184ec5138",
+          "objectSchemaEvidence": "SAME_BUILD_INLINE_AUDIOCLIP_TYPETREE_VALIDATED_AGAINST_EIGHT_BINARY2TEXT_CONTROLS",
+          "resourceObjectAddress": "NOT_ASSERTED_RESOURCES_LOOKUP_REQUIRES_ACTUAL_RUNTIME"
+        },
+        {
+          "originalName": "Audio/confirmation_004.ogg",
+          "resource": "Outbreak/Audio/fb9f58f6f5b248e0654c",
+          "path": "Assets/Outbreak/Resources/Outbreak/Audio/fb9f58f6f5b248e0654c.ogg",
+          "guid": "b8841d3f21510fe40886ab923e822b3b",
+          "sourceSha256": "568967a3d9f8a8f6af54ea01729c4882284308f2a27d78c07ffd7ee0d6951661",
+          "sourceMetaSha256": "8b305935f4a4ede5e2163acaa35ebeb47b2cc13c358c63a7476dc9c1257d6896",
+          "sourceBytes": 12391,
+          "sourceMetaBytes": 488,
+          "source": "D:\\Route88\\Assets\\Outbreak\\Resources\\Outbreak\\Audio\\fb9f58f6f5b248e0654c.ogg",
+          "warm": "D:\\CodexWork\\Route88-PhonePlaytest-20261005\\Assets\\Outbreak\\Resources\\Outbreak\\Audio\\fb9f58f6f5b248e0654c.ogg",
+          "warmSha256": "568967a3d9f8a8f6af54ea01729c4882284308f2a27d78c07ffd7ee0d6951661",
+          "warmMetaSha256": "8b305935f4a4ede5e2163acaa35ebeb47b2cc13c358c63a7476dc9c1257d6896",
+          "importPolicy": {
+            "loadType": "1",
+            "sampleRateSetting": "0",
+            "sampleRateOverride": "44100",
+            "compressionFormat": "1",
+            "quality": "0.65",
+            "conversionMode": "0",
+            "preloadAudioData": "1"
+          },
+          "deliveryClass": "INHERITED_RESIDENT_DEPENDENCY_NOT_IN_459_COPY_UNION",
+          "copiedByThisSync": false,
+          "originalOgg": {
+            "channels": 1,
+            "frequency": 44100,
+            "finalGranule": 21627,
+            "duration": 0.4904081632653061,
+            "pcmDecoded": false,
+            "oggCRCInspected": false
+          },
+          "evidenceKind": "ACTUAL_PACKED_AUDIOCLIP_SAME_BUILD_SCHEMA_AND_REFERENCED_PAYLOAD",
+          "packedEvidence": {
+            "pack": "resources.assets",
+            "path": "Assets/Outbreak/Resources/Outbreak/Audio/fb9f58f6f5b248e0654c.ogg",
+            "guid": "b8841d3f21510fe40886ab923e822b3b",
+            "classID": 83,
+            "packedBytes": 100,
+            "fileID": 844,
+            "offset": 378049136
+          },
+          "packedPayloadEvidence": {
+            "pack": "resources.resource",
+            "path": "Assets/Outbreak/Resources/Outbreak/Audio/fb9f58f6f5b248e0654c.ogg",
+            "guid": "b8841d3f21510fe40886ab923e822b3b",
+            "classID": 83,
+            "packedBytes": 11014,
+            "fileID": 0,
+            "offset": 3846432
+          },
+          "objectId": 844,
+          "objectOffset": 378049136,
+          "objectBytes": 100,
+          "values": {
+            "m_Name": "fb9f58f6f5b248e0654c",
+            "m_LoadType": 1,
+            "m_Channels": 1,
+            "m_Frequency": 44100,
+            "m_BitsPerSample": 16,
+            "m_Length": 0.49040815234184265,
+            "m_IsTrackerFormat": 0,
+            "m_Ambisonic": 0,
+            "m_SubsoundIndex": 0,
+            "m_PreloadAudioData": 1,
+            "m_LoadInBackground": 0,
+            "m_Legacy3D": 1,
+            "m_Source": "resources.resource",
+            "m_Offset": 3846432,
+            "m_Size": 11014,
+            "m_CompressionFormat": 7
+          },
+          "payload": {
+            "stream": "resources.resource",
+            "container": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-startup\\Route88-Mobile.data",
+            "containerSha256": "fc5a8047fe40711c09c4461fea71786b01d64f88c7f44e4a05ae408900c4f5b6",
+            "streamEvidence": "ACTUAL_STARTUP_WEBDATA_SEGMENT",
+            "streamOffset": 133074146,
+            "streamSha256": "52359bf9c216d02c36b01a0f2cb6b659f9d1c2d050583ea7e6f32294d210f53c",
+            "streamBytes": 5284125,
+            "offset": 3846432,
+            "bytes": 11014,
+            "payloadSha256": "b08abfd237c03d4b27b5bc7b3a87a5146b51155b5e155c56c89ea4d474e9a606",
+            "signatureHex": "00000018667479706d70343200000000",
+            "payloadContainer": "ISO_BASE_MEDIA_MP4",
+            "topLevelAtoms": [
+              {
+                "type": "ftyp",
+                "offset": 0,
+                "bytes": 24,
+                "headerBytes": 8
+              },
+              {
+                "type": "uuid",
+                "offset": 24,
+                "bytes": 39,
+                "headerBytes": 8
+              },
+              {
+                "type": "mdat",
+                "offset": 63,
+                "bytes": 10233,
+                "headerBytes": 8
+              },
+              {
+                "type": "moov",
+                "offset": 10296,
+                "bytes": 718,
+                "headerBytes": 8
+              }
+            ],
+            "audioPCMDecoded": false,
+            "sourceEncodingEquality": "NOT_ASSERTED_UNITY_IMPORTED_OR_TRANSCODED_PAYLOAD"
+          },
+          "buildReportSha256": "7ea0fe2c39aa4d47e7dafb38593ecca02c0e2e88618f9a904527ca8a35a221b7",
+          "startupDataSha256": "fc5a8047fe40711c09c4461fea71786b01d64f88c7f44e4a05ae408900c4f5b6",
+          "serializedFileSha256": "bad6c7798902fb5f4f3a4d960d671899ac2a6d5440145d9f9e262960283d96dc",
+          "audioTypeHashBytes": "57a6370a001d5449abd37c2184ec5138",
+          "objectSchemaEvidence": "SAME_BUILD_INLINE_AUDIOCLIP_TYPETREE_VALIDATED_AGAINST_EIGHT_BINARY2TEXT_CONTROLS",
+          "resourceObjectAddress": "NOT_ASSERTED_RESOURCES_LOOKUP_REQUIRES_ACTUAL_RUNTIME"
+        }
+      ],
+      "typedControlEvidence": [
+        {
+          "serializedFile": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-media\\01_MistyLands\\r88-74fca25490adaf56fcfbce03.bundle_data\\CAB-81fadb1c9f1def83582ab259172090b5",
+          "serializedFileSha256": "6578b421634be8ca87d3fde55dc449e3374c74769571468791f192aaa48f574f",
+          "dump": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-media\\01_MistyLands\\serialized-media.txt",
+          "dumpSha256": "88ffeaaf6507195b289d145d28d318edf59080bffd492c68167aa84c7c4d0e03",
+          "objectId": 6746204068556249309,
+          "fieldsVerified": 16
+        },
+        {
+          "serializedFile": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-media\\02_AtmospheresI\\r88-28c7ac502685a799224433a2.bundle_data\\CAB-eb96164ca7560ad7464f2f8900318d16",
+          "serializedFileSha256": "78df6a6f9e062bc4db474aa60ed88ea2357749cc19184b165ec6b0f64161d671",
+          "dump": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-media\\02_AtmospheresI\\serialized-media.txt",
+          "dumpSha256": "e440472a4b20a4bfeaaa082fbcf269505a6dc06b1cc009274d05a06bfdfba3e8",
+          "objectId": 4972835014502276863,
+          "fieldsVerified": 16
+        },
+        {
+          "serializedFile": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-media\\03_JourneyBegins\\r88-441286308744257d82bdd57b.bundle_data\\CAB-7a563e9735a214389f17cf2d69145712",
+          "serializedFileSha256": "d92f0c4159d69c9c543bd53ffd7524edd7869ca96ffdff537e2cfb235c831955",
+          "dump": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-media\\03_JourneyBegins\\serialized-media.txt",
+          "dumpSha256": "dd78b31bd4858115bb36d8b9e632fa92bdd179494d05f87a6e9caeebe8e2a32d",
+          "objectId": 3467910923177574904,
+          "fieldsVerified": 16
+        },
+        {
+          "serializedFile": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-media\\04_AtmospheresII\\r88-b3cb50c67e9579425bde31fe.bundle_data\\CAB-e1f046039bd4f8d5320214edcde99d16",
+          "serializedFileSha256": "3362eaf56e29c2df78bd214c650c60e621f51e1239583437a0bfcef012a0ae58",
+          "dump": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-media\\04_AtmospheresII\\serialized-media.txt",
+          "dumpSha256": "dce91ecbbc510bd066bb86960c88a98ade19e6e114c65b13138bb0b77e8737c2",
+          "objectId": -2796653839412281743,
+          "fieldsVerified": 16
+        },
+        {
+          "serializedFile": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-media\\05_MountainHalls\\r88-57c71fda08e69f10d07839c7.bundle_data\\CAB-5d865f9085417a6a23040288b43a0e4f",
+          "serializedFileSha256": "332d6515a01bb6f5082ea7ea9498cdb5760d02fa7ebd07ec945d17d45c1696d3",
+          "dump": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-media\\05_MountainHalls\\serialized-media.txt",
+          "dumpSha256": "02dedfcbef9e154164904910c35e9a56a1f39f61ed10c9409ae3cbd7a231c711",
+          "objectId": 3818156989086249217,
+          "fieldsVerified": 16
+        },
+        {
+          "serializedFile": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-media\\06_AtmospheresIII\\r88-e768de24c0c74754cfb6f805.bundle_data\\CAB-9272b3c6ea1a85fb0babee66c89a246b",
+          "serializedFileSha256": "4d6292762eec713f8dd6d64c58c24743c717b07414ff569fa4214d4a865303ae",
+          "dump": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-media\\06_AtmospheresIII\\serialized-media.txt",
+          "dumpSha256": "a225e04e1a457f9d6e7ca96980df0b04de3101bf9abde53819f288cae18a738b",
+          "objectId": 880757827054491797,
+          "fieldsVerified": 16
+        },
+        {
+          "serializedFile": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-media\\08_MountainHallsLoop\\r88-c5bb7099b173ed3575a568cc.bundle_data\\CAB-042ad9bd53573eb2ba3365eb4dca79ea",
+          "serializedFileSha256": "055e973b3585f235da479223f30545bfcee79a9f5fc6fc28808b26dc8019a196",
+          "dump": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-media\\08_MountainHallsLoop\\serialized-media.txt",
+          "dumpSha256": "09c2db2185ef01db3553aa11f4adaacf5e47929b3dca5ff70e1f4b852df0542a",
+          "objectId": 4798672331996446040,
+          "fieldsVerified": 16
+        },
+        {
+          "serializedFile": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-media\\09_JourneyBeginsLoop\\r88-d69a0e15d8736dbaaa97a5fd.bundle_data\\CAB-5b397f2ad4df5b96ce2575739ac8c383",
+          "serializedFileSha256": "2a4384678f7fb56117da01e0205ec9f81250cd570e51ace25c28a008c1d066dd",
+          "dump": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\WebAudit-R22-R3\\serialized-media\\09_JourneyBeginsLoop\\serialized-media.txt",
+          "dumpSha256": "eabac532f3cfd29fbc20fe01827d026f24c91a1f2da07e3bfb8b9aa4c012dbfb",
+          "objectId": 2799537652928339755,
+          "fieldsVerified": 16
+        }
+      ],
+      "serializedFileSha256": "bad6c7798902fb5f4f3a4d960d671899ac2a6d5440145d9f9e262960283d96dc",
+      "audioTypeHashBytes": "57a6370a001d5449abd37c2184ec5138",
+      "readerSha256": "a969a69e07ecddd97f087da3a51d638a6bd73bad08aed62388d76417a987d49a",
+      "scope": "Four actual resident clip object fields and confined compiled audio payload slices; original OGG/GUID/import identity is separate. No natural audibility, phone execution or original/transcoded byte equivalence."
+    },
+    "residentTitleFontLicense": [
+      {
+        "path": "Assets/Outbreak/Resources/Outbreak/Route88Title.ttf",
+        "classID": 128,
+        "guid": "c37f491ee3e54ee8abc1be2a88c41e5a",
+        "payloadBytes": 166532,
+        "payloadSha256": "282a825b5f294377387e3969f765408157dbea8da0f5d0aae68c6bc704b145b3",
+        "objectId": 894
+      },
+      {
+        "path": "Assets/Outbreak/Resources/Outbreak/Route88Title-OFL.txt",
+        "classID": 49,
+        "guid": "05e78478ba1646279b271a7c0845bddf",
+        "payloadBytes": 4411,
+        "payloadSha256": "f67ca4a200424868ee8fcd5464d7b35ac1cbf7723f6bfdbd19a8524689fab9a8",
+        "objectId": 709
+      }
+    ],
+    "launcher": {
+      "launcherTemplateSha256": "0c7165c48159dcf2985de1eb01a3e59ddc92937528277d8835976301039f2bc9",
+      "workerTemplateSha256": "83e99b754848146ada2193151a9d5ae74c9bb71bab05c247149dba893eb2eb02",
+      "runtimeScriptSha256": "a1063c8115d09d02fdc73b3700deaaddaf3bedb1faeb31334c90a5745a08ec58",
+      "palette": {
+        "crimson": "#A8323E",
+        "ivory": "#EFE7D6",
+        "charcoal": "#15191C",
+        "steel": "#ADB6BB"
+      },
+      "caption": "Portrait play. Move with the left control, drag on the right to aim, and tap DASH to dodge. Auto-fire follows your chosen aim only when an enemy is visible, in range, and in a clear line."
+    },
+    "actualReleasePrerequisites": {
+      "status": "ACTUAL_FULL_NATIVE_AND_EARNED_ACCEPTED",
+      "publisher": {
+        "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\BuildPipeline61\\publish_source_continuous_full_r14_guard_R7_R3.py",
+        "sha256": "2836160a5b720552597b5c2e4779b73c3f87c84c9cc99652c64863c43c4e5b9c",
+        "bytes": 27580
+      },
+      "nativePrerequisiteControls": [
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\NativeBuild-R14\\completed-native-build.json",
+          "sha256": "07879fc9afda72b79472df54b04a14f4dd9b33981d2e63181a81399b6937a719",
+          "bytes": 4494
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Gameplay-R14\\check-start.json",
+          "sha256": "a0cc311b07540078dabdff10c3a59fb3c72ebed142fb4ea9017faa9a56011b9a",
+          "bytes": 1149
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Gameplay-R14\\check-exit.json",
+          "sha256": "09afe36ddbe376ede2d2a7ab6e19e5824e485f1ca2be2ed1503cfce160733156",
+          "bytes": 735
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Gameplay-R14\\check-result.json",
+          "sha256": "c46764f26f2fef9b9d57edc0c8d7e076515a3fe0636971a856c2211b8703edae",
+          "bytes": 901
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Gameplay-R14\\verified-player-runtime.json",
+          "sha256": "9b5c54585c65a2914955126d74e5ecb2435a34e7f1b88fa4c0c713f89aea6bad",
+          "bytes": 43767
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Gameplay-R14\\gameplay-checks.txt",
+          "sha256": "65411bc4717a8121733a0cee79e86bdcd5628eacccd4f749891632d587352366",
+          "bytes": 934792
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Gameplay-R14\\player.log",
+          "sha256": "6e5dfe1de0560358bec000832c542e59e22d3917cc623a15c87967916d85a9ab",
+          "bytes": 1186386
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Gameplay-R14\\player-runtime-snapshot.json",
+          "sha256": "c46162f414aebe3c116a9c35f9e78aee7c6232e7cff6b30d8eb990439f5d099e",
+          "bytes": 43304
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Gameplay-R14\\crimson-stencil-title.png",
+          "sha256": "a9e10b3bd28223e3981342f8f266a4ec4157b0652600c0d03d9bfde59661f31a",
+          "bytes": 636370
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Gameplay-R14\\chapter-note-read.png",
+          "sha256": "9d7e191de8b808f29dd3ed925da9df5c236e1a9b84df0a0a16042401a18ea4b9",
+          "bytes": 944765
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Gameplay-R14\\chapter-note-burn.png",
+          "sha256": "7f2565fdcba94eb0b8756f8868bd3367e6596ff81d83f0d4636459f23563bfd6",
+          "bytes": 959159
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Gameplay-R14\\chapter-note-consumed.png",
+          "sha256": "16b53b208d04cabc340e7e6d516ae20bb9014e58ae52de3a8fbfda7d2fc45370",
+          "bytes": 969195
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Gameplay-R14\\health-line-green.png",
+          "sha256": "16b53b208d04cabc340e7e6d516ae20bb9014e58ae52de3a8fbfda7d2fc45370",
+          "bytes": 969195
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Gameplay-R14\\health-line-yellow.png",
+          "sha256": "7f8c66cbf046165d1011b5ea2b3b65967fc6cf63924fdef35475dfcac1cfa3d6",
+          "bytes": 969206
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Gameplay-R14\\health-line-red.png",
+          "sha256": "453a74268d89cb4f8363c623717e58b1b1e9188b3b771ee58aac7b7076ba3aeb",
+          "bytes": 969152
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Gameplay-R14\\ui-graphics-review-binding.json",
+          "sha256": "ca335f834fc9ecd32b06ce00dc4d7002da1067e9fac0ea4cb5e91bac375b21ea",
+          "bytes": 9064
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\NativeUI-GraphicsReview-R14-R1\\review.json",
+          "sha256": "15a9e33bc3a194623251d2ea0f79e072f59a93f7046b89f60270b75651397282",
+          "bytes": 3916
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Migration-R14\\check-start.json",
+          "sha256": "b5e3383b9935d2b42e1f8814ee0caac627abd48b5c9781bcdd99fa803d16110e",
+          "bytes": 1155
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Migration-R14\\check-exit.json",
+          "sha256": "ad6f76f85836c81f40e3b68a65e4fc34de03f31a057727605279450b9a0a0f88",
+          "bytes": 738
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Migration-R14\\check-result.json",
+          "sha256": "a1de327580ad47e7701d6d7f3457ffb23e9a605209bc937a7a185a70494e35aa",
+          "bytes": 906
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Migration-R14\\verified-player-runtime.json",
+          "sha256": "7f3cfeeefd0a8ce9791e033ed4dd537aedcace44ac034e53334193dbfae7812c",
+          "bytes": 43769
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Migration-R14\\migration-checks.txt",
+          "sha256": "56ef574e24a0585ca697457c844636570ae5ca81609e48e618d0c16b47adced4",
+          "bytes": 502813
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Migration-R14\\player.log",
+          "sha256": "e416a4e695d68a5d147b4a4f9669a1fd0335cf8f083e8694fe8b2af16475a614",
+          "bytes": 653502
+        },
+        {
+          "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Migration-R14\\player-runtime-snapshot.json",
+          "sha256": "bff2a2f233941960b62be7e019243c13111498b6a6fac55093d3de432113b331",
+          "bytes": 43304
+        }
+      ],
+      "earnedCampaign": {
+        "path": "D:\\Unity\\Route88\\Reports\\Safehouse-Progression-20261006\\Campaign-R10\\completed-campaign.json",
+        "sha256": "8c5474e74cad277feb7636e4028ecc0f4f48e39ff60815d78799c92469e323b3",
+        "bytes": 3719
+      },
+      "scope": "Actual fullR14 native and CampaignR10 only; Web/mobile/device/listening/final-doc acceptance are separate."
+    }
+  }
 }
