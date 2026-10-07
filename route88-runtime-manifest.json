@@ -1,35 +1,35 @@
 {
   "schema": "route88-mobile-compiled-delivery-v2",
-  "createdUtc": "2026-10-06T10:52:27.992225+00:00",
-  "buildId": "f99cc94436807f4630b8fb4370e69d98c064ac92161fe572718637d0239dbd0e",
-  "profileId": "21186e0de7bc0ef88e1c82bfbec872ec64d8f382df6863b0cefd801488e8adad",
-  "startupTransferBytes": 149672554,
-  "deferredTransferBytes": 37523998,
-  "startupDecodedBytes": 229816959,
-  "deferredDecodedBytes": 38217039,
+  "createdUtc": "2026-10-06T23:44:11.317033+00:00",
+  "buildId": "915dd163a588f38f6084b526ad0efd1fe58a423f16811729dac8f0cc2eb9cc6b",
+  "profileId": "3857cacc266ab95de883a62b789a68fd3129e557591efc67ac481843fa971382",
+  "startupTransferBytes": 155451686,
+  "deferredTransferBytes": 49891444,
+  "startupDecodedBytes": 235792667,
+  "deferredDecodedBytes": 50810094,
   "compiledFiles": [
     {
       "relative": "Build/Route88-Mobile.data",
       "kind": "data",
-      "bytes": 156704044,
-      "sha256": "3e5e033ce3a421a832acf727e19ae73021bb530c2ab5f8f3abe88179fbb73d17",
-      "gzipBytes": 133831608,
-      "gzipSha256": "bdff3fc2278fe2bfa1f42184ab61fca29cff2eef1102643ee73807edcd255370",
+      "bytes": 162609206,
+      "sha256": "e18137137cfe34e2f0631a02961c9cb921710a8d7e3256eed63df56b35fad62d",
+      "gzipBytes": 139587142,
+      "gzipSha256": "6f0bb3bf25726b71f60b1ff0258d98aacf7a0d2bc85738765db24ea0a1a96cd0",
       "parts": [
         {
-          "relative": "Build/Route88-Mobile.data.gzip-bdff3fc2278fe2bf.part01.bin",
+          "relative": "Build/Route88-Mobile.data.gzip-6f0bb3bf25726b71.part01.bin",
           "bytes": 47185920,
-          "sha256": "591e96919cf8679319027c91bc5c34dfb0b481d6317dca05780205486d65f520"
+          "sha256": "27a0cad0f5a2799b3287bb0250e651ea93112383b3b71d782afb44abad5c608c"
         },
         {
-          "relative": "Build/Route88-Mobile.data.gzip-bdff3fc2278fe2bf.part02.bin",
+          "relative": "Build/Route88-Mobile.data.gzip-6f0bb3bf25726b71.part02.bin",
           "bytes": 47185920,
-          "sha256": "816ab7953316c663c67ca3f08a2747eef44cac049d3f087468f8230b0f13ef6a"
+          "sha256": "f98736f02ef048340e9e2dada0c37c8eee7ee9eee6ab64e830aed1f94fa4db27"
         },
         {
-          "relative": "Build/Route88-Mobile.data.gzip-bdff3fc2278fe2bf.part03.bin",
-          "bytes": 39459768,
-          "sha256": "b8cdc388dc5f8494efb184857ffbd69ec794ae4acb156da0d61a30068001abaf"
+          "relative": "Build/Route88-Mobile.data.gzip-6f0bb3bf25726b71.part03.bin",
+          "bytes": 45215302,
+          "sha256": "d582812006d748b0a0fa9a2e06117064a1e7ef20e059a76f65f37c24a4fe94a0"
         }
       ],
       "contentType": "application/octet-stream"
@@ -37,15 +37,15 @@
     {
       "relative": "Build/Route88-Mobile.wasm",
       "kind": "wasm",
-      "bytes": 72360290,
-      "sha256": "77e4f75dab71ca26479893e71611acd55d3c30e313262e39b057a183d9eebf3e",
-      "gzipBytes": 15665263,
-      "gzipSha256": "61ef4e3291bb8598c5e2b4e4008c6fff69fb42187d7f873009340b20d7260c39",
+      "bytes": 72430836,
+      "sha256": "c8eb73a1525298ac47ef3507756bf93f3a78941c1c2ec9cd0acdcb4901f92fbd",
+      "gzipBytes": 15688866,
+      "gzipSha256": "e1971a3d07604bba3242849e5e73c7e9b91d42a3df3ed8d1a06ab613560a3bc3",
       "parts": [
         {
-          "relative": "Build/Route88-Mobile.wasm.gzip-61ef4e3291bb8598.part01.bin",
-          "bytes": 15665263,
-          "sha256": "61ef4e3291bb8598c5e2b4e4008c6fff69fb42187d7f873009340b20d7260c39"
+          "relative": "Build/Route88-Mobile.wasm.gzip-e1971a3d07604bba.part01.bin",
+          "bytes": 15688866,
+          "sha256": "e1971a3d07604bba3242849e5e73c7e9b91d42a3df3ed8d1a06ab613560a3bc3"
         }
       ],
       "contentType": "application/wasm"
@@ -54,14 +54,14 @@
       "relative": "Build/Route88-Mobile.framework.js",
       "kind": "framework",
       "bytes": 752625,
-      "sha256": "6c4a61a9dba99cf64ab9217e4994031f64711984bf1ab8a1353105d4c90a00e6",
-      "gzipBytes": 155659,
-      "gzipSha256": "2379244dfe214774bb0bc3cf25cc6d4450d0e7e5fbf7d6e59ebd206384f321c9",
+      "sha256": "49683cb6ce35b021f63cc20342f9625988188f04a26b27c80a86c86bb664bc85",
+      "gzipBytes": 155654,
+      "gzipSha256": "fee0bb2f4defa4f59d54b6e721530444396c73ca733904f087c3252dbcb85b16",
       "parts": [
         {
-          "relative": "Build/Route88-Mobile.framework.js.gzip-2379244dfe214774.part01.bin",
-          "bytes": 155659,
-          "sha256": "2379244dfe214774bb0bc3cf25cc6d4450d0e7e5fbf7d6e59ebd206384f321c9"
+          "relative": "Build/Route88-Mobile.framework.js.gzip-fee0bb2f4defa4f5.part01.bin",
+          "bytes": 155654,
+          "sha256": "fee0bb2f4defa4f59d54b6e721530444396c73ca733904f087c3252dbcb85b16"
         }
       ],
       "contentType": "application/javascript"
@@ -275,6 +275,22 @@
       "contentType": "application/octet-stream"
     },
     {
+      "relative": "Content/a3a4dcbe6fee2a37f40d93676d332404cc867b8320b3e2931d3cdf4957d8c997.bundle",
+      "kind": "bundle",
+      "bytes": 702087,
+      "sha256": "a3a4dcbe6fee2a37f40d93676d332404cc867b8320b3e2931d3cdf4957d8c997",
+      "gzipBytes": 689799,
+      "gzipSha256": "c485e512d81727e51bb6c6871dc4bb9e63421e0dd38a517305dd5ce51b66352f",
+      "parts": [
+        {
+          "relative": "Content/a3a4dcbe6fee2a37f40d93676d332404cc867b8320b3e2931d3cdf4957d8c997.bundle.gzip-c485e512d81727e5.part01.bin",
+          "bytes": 689799,
+          "sha256": "c485e512d81727e51bb6c6871dc4bb9e63421e0dd38a517305dd5ce51b66352f"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
       "relative": "Content/77f2727b2d84728934ccd0e30fd3be016dac714404f959eaf78a8b519cbe9ef1.bundle",
       "kind": "bundle",
       "bytes": 696770,
@@ -286,6 +302,22 @@
           "relative": "Content/77f2727b2d84728934ccd0e30fd3be016dac714404f959eaf78a8b519cbe9ef1.bundle.gzip-6ee9426fa8c70ca0.part01.bin",
           "bytes": 685129,
           "sha256": "6ee9426fa8c70ca0e566c178ccf671da62bc0330d009d7c6869e67eb960c9bd1"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
+      "relative": "Content/cf7cf709541c11bdc0870e90c810c9d7dd0a7ba75b947750227eaee492fd4fb8.bundle",
+      "kind": "bundle",
+      "bytes": 698700,
+      "sha256": "cf7cf709541c11bdc0870e90c810c9d7dd0a7ba75b947750227eaee492fd4fb8",
+      "gzipBytes": 685391,
+      "gzipSha256": "5f2a63ddf109aa72a77c6ff63f052e4b11c0740afac5f2e6e88c2e221869bc99",
+      "parts": [
+        {
+          "relative": "Content/cf7cf709541c11bdc0870e90c810c9d7dd0a7ba75b947750227eaee492fd4fb8.bundle.gzip-5f2a63ddf109aa72.part01.bin",
+          "bytes": 685391,
+          "sha256": "5f2a63ddf109aa72a77c6ff63f052e4b11c0740afac5f2e6e88c2e221869bc99"
         }
       ],
       "contentType": "application/octet-stream"
@@ -307,6 +339,22 @@
       "contentType": "application/octet-stream"
     },
     {
+      "relative": "Content/6084ec5a10d3ed0f6981d5c389219644af198256b985aa5627ec46284af08339.bundle",
+      "kind": "bundle",
+      "bytes": 700833,
+      "sha256": "6084ec5a10d3ed0f6981d5c389219644af198256b985aa5627ec46284af08339",
+      "gzipBytes": 686667,
+      "gzipSha256": "9a0b6d709c6315d741e288897e8ec34bb9e39eb165d2ef7290d56e9c4535e593",
+      "parts": [
+        {
+          "relative": "Content/6084ec5a10d3ed0f6981d5c389219644af198256b985aa5627ec46284af08339.bundle.gzip-9a0b6d709c6315d7.part01.bin",
+          "bytes": 686667,
+          "sha256": "9a0b6d709c6315d741e288897e8ec34bb9e39eb165d2ef7290d56e9c4535e593"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
       "relative": "Content/93afdfd837a37d39a07ee3c49578df3fda0f086bebebfe46aa7244989a4b4295.bundle",
       "kind": "bundle",
       "bytes": 700083,
@@ -318,6 +366,22 @@
           "relative": "Content/93afdfd837a37d39a07ee3c49578df3fda0f086bebebfe46aa7244989a4b4295.bundle.gzip-7fb25a676ccb2925.part01.bin",
           "bytes": 687014,
           "sha256": "7fb25a676ccb2925c4e23f7a8b22ca6b95276b757c6595ec71064e2c8193991a"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
+      "relative": "Content/e55129967d92f1e4f5d6ead2fad70216efd4f858d85398b90d574bf32e9b9dd3.bundle",
+      "kind": "bundle",
+      "bytes": 700226,
+      "sha256": "e55129967d92f1e4f5d6ead2fad70216efd4f858d85398b90d574bf32e9b9dd3",
+      "gzipBytes": 686897,
+      "gzipSha256": "c986102825f8b260fe993ba7f0b1cb4ae61d7738a5be78a384c55d2fd7ce6acf",
+      "parts": [
+        {
+          "relative": "Content/e55129967d92f1e4f5d6ead2fad70216efd4f858d85398b90d574bf32e9b9dd3.bundle.gzip-c986102825f8b260.part01.bin",
+          "bytes": 686897,
+          "sha256": "c986102825f8b260fe993ba7f0b1cb4ae61d7738a5be78a384c55d2fd7ce6acf"
         }
       ],
       "contentType": "application/octet-stream"
@@ -355,6 +419,22 @@
       "contentType": "application/octet-stream"
     },
     {
+      "relative": "Content/da55448cfe08ce1130fd7c8f32418172296bc816094a73e9446f275a48e953fd.bundle",
+      "kind": "bundle",
+      "bytes": 698538,
+      "sha256": "da55448cfe08ce1130fd7c8f32418172296bc816094a73e9446f275a48e953fd",
+      "gzipBytes": 685708,
+      "gzipSha256": "becdf4f01e4b5b0fb593d01e6d89507ad0b9319e9366674e0460598e5523160d",
+      "parts": [
+        {
+          "relative": "Content/da55448cfe08ce1130fd7c8f32418172296bc816094a73e9446f275a48e953fd.bundle.gzip-becdf4f01e4b5b0f.part01.bin",
+          "bytes": 685708,
+          "sha256": "becdf4f01e4b5b0fb593d01e6d89507ad0b9319e9366674e0460598e5523160d"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
       "relative": "Content/10b6c09257967cbcfb43a70625729e2db977d5f5856495436cc27a341a9174c3.bundle",
       "kind": "bundle",
       "bytes": 690200,
@@ -366,6 +446,22 @@
           "relative": "Content/10b6c09257967cbcfb43a70625729e2db977d5f5856495436cc27a341a9174c3.bundle.gzip-11cac47092d9e881.part01.bin",
           "bytes": 673044,
           "sha256": "11cac47092d9e881a366eb3a8291b635f7bed8a4f55d6628ec242eddaea559e2"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
+      "relative": "Content/ced54359fddbecab5964db0ea2aa693e442ab7ea9385fe38fb9d68f7166f7360.bundle",
+      "kind": "bundle",
+      "bytes": 692010,
+      "sha256": "ced54359fddbecab5964db0ea2aa693e442ab7ea9385fe38fb9d68f7166f7360",
+      "gzipBytes": 675047,
+      "gzipSha256": "5eda9cc8da857b5203c6961bdc8b732c6053048a9b94faec88ba70f45e0cf10c",
+      "parts": [
+        {
+          "relative": "Content/ced54359fddbecab5964db0ea2aa693e442ab7ea9385fe38fb9d68f7166f7360.bundle.gzip-5eda9cc8da857b52.part01.bin",
+          "bytes": 675047,
+          "sha256": "5eda9cc8da857b5203c6961bdc8b732c6053048a9b94faec88ba70f45e0cf10c"
         }
       ],
       "contentType": "application/octet-stream"
@@ -419,6 +515,22 @@
       "contentType": "application/octet-stream"
     },
     {
+      "relative": "Content/b87cdc65a3a2af3f9bd9442fe09e1fe77a6f7e73cf3d91388364b5eb491dfec6.bundle",
+      "kind": "bundle",
+      "bytes": 698469,
+      "sha256": "b87cdc65a3a2af3f9bd9442fe09e1fe77a6f7e73cf3d91388364b5eb491dfec6",
+      "gzipBytes": 681207,
+      "gzipSha256": "5336d3c42c798503ea882e97361bc9e60269a6e7f10dcf1797130ef4c1c98891",
+      "parts": [
+        {
+          "relative": "Content/b87cdc65a3a2af3f9bd9442fe09e1fe77a6f7e73cf3d91388364b5eb491dfec6.bundle.gzip-5336d3c42c798503.part01.bin",
+          "bytes": 681207,
+          "sha256": "5336d3c42c798503ea882e97361bc9e60269a6e7f10dcf1797130ef4c1c98891"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
       "relative": "Content/9810eff5d84760bc9a973c54d61cc8ef46caf15ec264574ae22aefc2191fb417.bundle",
       "kind": "bundle",
       "bytes": 701227,
@@ -430,6 +542,22 @@
           "relative": "Content/9810eff5d84760bc9a973c54d61cc8ef46caf15ec264574ae22aefc2191fb417.bundle.gzip-ea59f2ce70d63262.part01.bin",
           "bytes": 690275,
           "sha256": "ea59f2ce70d63262228d8f9e2e1463155e3743aa858e62c31387334537f80f64"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
+      "relative": "Content/d497cbcc8a476dfce10de9d4bba96727712b272bf58a8b9fe1fa13d4c82314e4.bundle",
+      "kind": "bundle",
+      "bytes": 701876,
+      "sha256": "d497cbcc8a476dfce10de9d4bba96727712b272bf58a8b9fe1fa13d4c82314e4",
+      "gzipBytes": 691145,
+      "gzipSha256": "9310588c15d373e0c393b78ba13cc4f2a95533bdd071616733ccc5f97c4a8d35",
+      "parts": [
+        {
+          "relative": "Content/d497cbcc8a476dfce10de9d4bba96727712b272bf58a8b9fe1fa13d4c82314e4.bundle.gzip-9310588c15d373e0.part01.bin",
+          "bytes": 691145,
+          "sha256": "9310588c15d373e0c393b78ba13cc4f2a95533bdd071616733ccc5f97c4a8d35"
         }
       ],
       "contentType": "application/octet-stream"
@@ -451,6 +579,22 @@
       "contentType": "application/octet-stream"
     },
     {
+      "relative": "Content/c1a1cebb3df95d3eaf93181e5d0e6cbada97da0e052c326ccfd156c169036c0d.bundle",
+      "kind": "bundle",
+      "bytes": 697394,
+      "sha256": "c1a1cebb3df95d3eaf93181e5d0e6cbada97da0e052c326ccfd156c169036c0d",
+      "gzipBytes": 683607,
+      "gzipSha256": "e689df4465db0af04e5b6883e7a12176a3cc17431b165bd4c66a6e717703d27a",
+      "parts": [
+        {
+          "relative": "Content/c1a1cebb3df95d3eaf93181e5d0e6cbada97da0e052c326ccfd156c169036c0d.bundle.gzip-e689df4465db0af0.part01.bin",
+          "bytes": 683607,
+          "sha256": "e689df4465db0af04e5b6883e7a12176a3cc17431b165bd4c66a6e717703d27a"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
       "relative": "Content/ce414f7840e6fffde24f2d92af72c36398f1706672dce2a6f8e6de4a6ad4b1cd.bundle",
       "kind": "bundle",
       "bytes": 702053,
@@ -462,6 +606,22 @@
           "relative": "Content/ce414f7840e6fffde24f2d92af72c36398f1706672dce2a6f8e6de4a6ad4b1cd.bundle.gzip-3b10f15149e7d4f1.part01.bin",
           "bytes": 692140,
           "sha256": "3b10f15149e7d4f1b3126462195966e5f6fa6eaee7fb952452911dd5f57c43cb"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
+      "relative": "Content/fec4e7629a6457f016b388ac8616f2515e47e27050cb7442633af88d57cadf5e.bundle",
+      "kind": "bundle",
+      "bytes": 702366,
+      "sha256": "fec4e7629a6457f016b388ac8616f2515e47e27050cb7442633af88d57cadf5e",
+      "gzipBytes": 692527,
+      "gzipSha256": "f08db4e67908d467ff1a1fd4a7e240ed9d0824b9444c663ed6d4ea380df1c225",
+      "parts": [
+        {
+          "relative": "Content/fec4e7629a6457f016b388ac8616f2515e47e27050cb7442633af88d57cadf5e.bundle.gzip-f08db4e67908d467.part01.bin",
+          "bytes": 692527,
+          "sha256": "f08db4e67908d467ff1a1fd4a7e240ed9d0824b9444c663ed6d4ea380df1c225"
         }
       ],
       "contentType": "application/octet-stream"
@@ -483,6 +643,22 @@
       "contentType": "application/octet-stream"
     },
     {
+      "relative": "Content/f49eba929fa1ab95e20ecc367b945ba62cf8a89d8f9649796c9122c798694aa1.bundle",
+      "kind": "bundle",
+      "bytes": 700832,
+      "sha256": "f49eba929fa1ab95e20ecc367b945ba62cf8a89d8f9649796c9122c798694aa1",
+      "gzipBytes": 686630,
+      "gzipSha256": "f807765833d436a2b4890e1a88dd85a009a60e2e935795452a0d5db28107875d",
+      "parts": [
+        {
+          "relative": "Content/f49eba929fa1ab95e20ecc367b945ba62cf8a89d8f9649796c9122c798694aa1.bundle.gzip-f807765833d436a2.part01.bin",
+          "bytes": 686630,
+          "sha256": "f807765833d436a2b4890e1a88dd85a009a60e2e935795452a0d5db28107875d"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
       "relative": "Content/03732b5645d51202e449160d0863b5be5cf971d41608484fa182c21072609e0d.bundle",
       "kind": "bundle",
       "bytes": 700593,
@@ -499,6 +675,102 @@
       "contentType": "application/octet-stream"
     },
     {
+      "relative": "Content/15a92f1fc5b9689c6ff6fd797d486d0c687f0bac55f84b200c40d61a4c675a3c.bundle",
+      "kind": "bundle",
+      "bytes": 700920,
+      "sha256": "15a92f1fc5b9689c6ff6fd797d486d0c687f0bac55f84b200c40d61a4c675a3c",
+      "gzipBytes": 690948,
+      "gzipSha256": "c333c71bb731e8f8c0b4f947e40f6564327de20136d1c3826844f35e88f7e4da",
+      "parts": [
+        {
+          "relative": "Content/15a92f1fc5b9689c6ff6fd797d486d0c687f0bac55f84b200c40d61a4c675a3c.bundle.gzip-c333c71bb731e8f8.part01.bin",
+          "bytes": 690948,
+          "sha256": "c333c71bb731e8f8c0b4f947e40f6564327de20136d1c3826844f35e88f7e4da"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
+      "relative": "Content/e0e4be843dc419892c668768597e3a73fb0c3458dfa7cd88da104e4cba6f45da.bundle",
+      "kind": "bundle",
+      "bytes": 699469,
+      "sha256": "e0e4be843dc419892c668768597e3a73fb0c3458dfa7cd88da104e4cba6f45da",
+      "gzipBytes": 688394,
+      "gzipSha256": "c7b06faa44bfc0dea7e20296878f674730caa01d6e5ebde26698d46a49e0ab86",
+      "parts": [
+        {
+          "relative": "Content/e0e4be843dc419892c668768597e3a73fb0c3458dfa7cd88da104e4cba6f45da.bundle.gzip-c7b06faa44bfc0de.part01.bin",
+          "bytes": 688394,
+          "sha256": "c7b06faa44bfc0dea7e20296878f674730caa01d6e5ebde26698d46a49e0ab86"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
+      "relative": "Content/f38125884c378438fdb7a47bcdb5ee2598ee84c320d93e22d9d46430caedec73.bundle",
+      "kind": "bundle",
+      "bytes": 700423,
+      "sha256": "f38125884c378438fdb7a47bcdb5ee2598ee84c320d93e22d9d46430caedec73",
+      "gzipBytes": 688138,
+      "gzipSha256": "b89b17852680357fa17c16f0507871224b3e2251f5a8fd8e4bdaedca27c8409d",
+      "parts": [
+        {
+          "relative": "Content/f38125884c378438fdb7a47bcdb5ee2598ee84c320d93e22d9d46430caedec73.bundle.gzip-b89b17852680357f.part01.bin",
+          "bytes": 688138,
+          "sha256": "b89b17852680357fa17c16f0507871224b3e2251f5a8fd8e4bdaedca27c8409d"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
+      "relative": "Content/37fc4b36ccd2a76f019993c55422df469e507bd12ebd3d0a93552dd627e57e6c.bundle",
+      "kind": "bundle",
+      "bytes": 701382,
+      "sha256": "37fc4b36ccd2a76f019993c55422df469e507bd12ebd3d0a93552dd627e57e6c",
+      "gzipBytes": 689157,
+      "gzipSha256": "36f6d2ffe3ec840213b5074999dcc0012d0ad5f06bed169d965d48fa37a58e69",
+      "parts": [
+        {
+          "relative": "Content/37fc4b36ccd2a76f019993c55422df469e507bd12ebd3d0a93552dd627e57e6c.bundle.gzip-36f6d2ffe3ec8402.part01.bin",
+          "bytes": 689157,
+          "sha256": "36f6d2ffe3ec840213b5074999dcc0012d0ad5f06bed169d965d48fa37a58e69"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
+      "relative": "Content/7d6a6dd0f7646c2d49c487ed576a050814cfc5fbda6c86b7aabeec7898524dba.bundle",
+      "kind": "bundle",
+      "bytes": 699094,
+      "sha256": "7d6a6dd0f7646c2d49c487ed576a050814cfc5fbda6c86b7aabeec7898524dba",
+      "gzipBytes": 689905,
+      "gzipSha256": "9c4546495c71ca845de25c6742b16572d828e4927ca0b9c023107eeb65a17b78",
+      "parts": [
+        {
+          "relative": "Content/7d6a6dd0f7646c2d49c487ed576a050814cfc5fbda6c86b7aabeec7898524dba.bundle.gzip-9c4546495c71ca84.part01.bin",
+          "bytes": 689905,
+          "sha256": "9c4546495c71ca845de25c6742b16572d828e4927ca0b9c023107eeb65a17b78"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
+      "relative": "Content/b894bf82b2d32727a9476b1f908ce9179e5dda67fb96c3363dbf96df6101bb4b.bundle",
+      "kind": "bundle",
+      "bytes": 699352,
+      "sha256": "b894bf82b2d32727a9476b1f908ce9179e5dda67fb96c3363dbf96df6101bb4b",
+      "gzipBytes": 688630,
+      "gzipSha256": "f98964810c61f7933877a48dcfed2a60996eb6fb8ad028a04300b2a736883369",
+      "parts": [
+        {
+          "relative": "Content/b894bf82b2d32727a9476b1f908ce9179e5dda67fb96c3363dbf96df6101bb4b.bundle.gzip-f98964810c61f793.part01.bin",
+          "bytes": 688630,
+          "sha256": "f98964810c61f7933877a48dcfed2a60996eb6fb8ad028a04300b2a736883369"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
       "relative": "Content/855410958867d86513e3e08f3807135500a1c76c5d6f41ec570aad03bbdcedb1.bundle",
       "kind": "bundle",
       "bytes": 697716,
@@ -510,6 +782,22 @@
           "relative": "Content/855410958867d86513e3e08f3807135500a1c76c5d6f41ec570aad03bbdcedb1.bundle.gzip-1ef0c6da2b699180.part01.bin",
           "bytes": 686081,
           "sha256": "1ef0c6da2b69918040f63cc2469fb51ca5544af3efececfaa0ed49972d8ab7e6"
+        }
+      ],
+      "contentType": "application/octet-stream"
+    },
+    {
+      "relative": "Content/e59a167c7867007c2290d62376675c4517c7fcf617bec08a59705ab8df7e820e.bundle",
+      "kind": "bundle",
+      "bytes": 699084,
+      "sha256": "e59a167c7867007c2290d62376675c4517c7fcf617bec08a59705ab8df7e820e",
+      "gzipBytes": 687649,
+      "gzipSha256": "ae244645c86cc34a543f2d5805fb951d813810171f2647d55fe7fc000d881745",
+      "parts": [
+        {
+          "relative": "Content/e59a167c7867007c2290d62376675c4517c7fcf617bec08a59705ab8df7e820e.bundle.gzip-ae244645c86cc34a.part01.bin",
+          "bytes": 687649,
+          "sha256": "ae244645c86cc34a543f2d5805fb951d813810171f2647d55fe7fc000d881745"
         }
       ],
       "contentType": "application/octet-stream"
@@ -662,7 +950,7 @@
   "loader": {
     "relative": "Build/Route88-Mobile.loader.js",
     "bytes": 20024,
-    "sha256": "f9ca61e937f2c83d3171be10e53a162105076ef43dab3277b6b214ad7629eee9"
+    "sha256": "638c4a44cb9e0012786c4ca07c04dc12f04691d4f90050dfefc7101d89bc620b"
   },
   "delivery": "Same-origin gzip stream reconstruction; compiled LZ4 AssetBundles requested only when needed.",
   "preservation": "Only compiled output is packaged. No source PNG/WAV files, metadata, Unity project, private packs or credentials are published."
