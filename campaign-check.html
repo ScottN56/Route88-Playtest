@@ -33,7 +33,7 @@ button{font:inherit;min-height:48px;padding:12px 18px;border:1px solid var(--acc
 <pre id="error" role="alert"></pre>
 <small id="build">First load downloads about 154 MB. Later content loads when needed. Keep this page open while playing.</small>
 </section>
-</main><details style="margin:12px;color:#EFE7D6"><summary>Actual QA log export</summary><button id="route88-qa-log-export" type="button" onclick="window.Route88QaLog.exportActual()">EXPORT ACTUAL QA LOG</button><textarea id="route88-qa-log-raw" readonly hidden style="width:100%;height:240px" aria-label="Actual complete QA log JSON"></textarea></details>
+</main><details style="margin:12px;color:#EFE7D6"><summary>Actual QA log export</summary><button id="route88-qa-log-export" type="button" onclick="window.Route88QaLog.exportActual()">EXPORT ACTUAL QA LOG</button><p id="route88-qa-log-status" role="status">The complete actual JSON downloads as a file.</p><a id="route88-qa-log-download" hidden>DOWNLOAD ACTUAL FULL QA LOG</a></details>
 <script>/* QA page only. Append-only actual events; preserve console calls and all errors. */
 (() => {
   "use strict";
@@ -77,31 +77,91 @@ button{font:inherit;min-height:48px;padding:12px 18px;border:1px solid var(--acc
     if (!identity) throw new Error("QA log identity is not configured");
     return {schema: "route88-actual-qa-durable-console-v1", transport: "QA_PAGE_APPEND_ONLY_ACTUAL_EVENTS", openedUtc, capturedUtc: new Date().toISOString(), pageUrl: location.href, buildId: identity.buildId, frameworkUrl: identity.frameworkUrl, captureIntegrity: recordingFailures.length === 0, recordingFailures: recordingFailures.slice(), rowCount: events.length, rows: events.slice()};
   }
+  // Keep serialized JS strings within one small batch plus the largest single row.
+  // The retained event log and native full-download Blob still scale with the log.
+  function fullJsonBlob(payload) {
+    const maxBatchChars = 256 * 1024;
+    let parts = [];
+    let batchChars = 0;
+    const blobs = [];
+    function flush() {
+      if (!parts.length) return;
+      blobs.push(new Blob(parts));
+      parts.length = 0;
+      batchChars = 0;
+    }
+    function append(text) {
+      if (batchChars && batchChars + text.length > maxBatchChars) flush();
+      if (text.length > maxBatchChars) { blobs.push(new Blob([text])); return; }
+      parts.push(text);
+      batchChars += text.length;
+    }
+    let header = JSON.stringify({...payload, rows: []}, null, 2);
+    if (payload.rows.length) {
+      const tail = '  "rows": []\n}';
+      if (!header.endsWith(tail)) throw new Error("Actual QA snapshot rows must remain last");
+      append(header.slice(0, -tail.length) + '  "rows": [\n');
+      header = null;
+      for (let index = 0; index < payload.rows.length; index++) {
+        append((index ? ',\n' : '') + '    ' + JSON.stringify(payload.rows[index], null, 2).replace(/\n/g, '\n    '));
+      }
+      append('\n  ]\n}');
+    } else { append(header); header = null; }
+    flush();
+    const result = new Blob(blobs, {type: "application/json"});
+    blobs.length = 0;
+    parts = null;
+    return result;
+  }
+  let exportUrl = null;
+  let exportTimer = null;
+  function releaseExport() {
+    if (exportTimer !== null) { clearTimeout(exportTimer); exportTimer = null; }
+    if (exportUrl !== null) { URL.revokeObjectURL(exportUrl); exportUrl = null; }
+    const link = document.getElementById("route88-qa-log-download");
+    if (link) { link.removeAttribute("href"); link.hidden = true; }
+  }
+  window.addEventListener("pagehide", releaseExport);
   window.Route88QaLog = Object.freeze({
     configure(config) {
       if (identity) throw new Error("QA log identity cannot be replaced");
       identity = Object.freeze({buildId: config.buildId, frameworkUrl: new URL(config.frameworkUrl, location.href).href});
     },
     exportActual() {
-      const payload = JSON.stringify(snapshot(), null, 2);
-      const view = document.getElementById("route88-qa-log-raw");
-      if (!view) throw new Error("QA log export UI is absent");
-      view.hidden = false;
-      view.value = payload;
-      const link = document.createElement("a");
-      const url = URL.createObjectURL(new Blob([payload], {type: "application/json"}));
-      link.href = url;
-      link.download = "route88-qa-" + identity.buildId + ".actual.json";
-      link.click();
-      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      const view = document.getElementById("route88-qa-log-status");
+      const link = document.getElementById("route88-qa-log-download");
+      if (!view || !link) throw new Error("QA log export UI is absent");
+      let payload = null;
+      let blob = null;
+      try {
+        payload = snapshot();
+        blob = fullJsonBlob(payload);
+        releaseExport();
+        exportUrl = URL.createObjectURL(blob);
+        link.href = exportUrl;
+        link.download = "route88-qa-" + identity.buildId + ".actual.json";
+        link.hidden = false;
+        view.textContent = "Actual full JSON: " + payload.rowCount + " events, " + blob.size + " bytes. The download contains every original event and stack.";
+        // Stay synchronous inside the genuine UI export gesture.
+        link.click();
+        exportTimer = setTimeout(releaseExport, 60000);
+      } catch (error) {
+        recordingFailures.push({timestamp: new Date().toISOString(), channel: "QA.export", error: String(error && error.stack || error)});
+        releaseExport();
+        view.textContent = "Actual QA export failed: " + String(error && error.message || error).slice(0, 400);
+        throw error;
+      } finally {
+        payload = null;
+        blob = null;
+      }
     }
   });
 })();
 </script>
 <script>
 "use strict";
-const config = {"buildId":"81e51dd803cb53f3a2ca0cc9e342b7a20b0bb4a5c74461355d252ebb5b104138","loaderUrl":"Build/Route88-Mobile.loader.js?v=0bb8b4e755663675dadc46bd070efa107db62761a70c6019dd7edcf351ac9a99","dataUrl":"Build/Route88-Mobile.data?v=2344f439cbc2a86b12e89620112192b29696225d887294962ac731aa73d309b4","frameworkUrl":"Build/Route88-Mobile.framework.js?v=3f7d5712391c732c9c55d7407b966ebbf55627bd7f1984398767558ebbfd6994","codeUrl":"Build/Route88-Mobile.wasm?v=e101940115da10a7fe3266102f8217e31f3abca27505390e3f1d3de2fa0634f3","streamingAssetsUrl":"StreamingAssets","companyName":"Scott Natoli","productName":"Route 88","productVersion":"1.0.0"};
-const initialFiles=[{"relative":"Build/Route88-Mobile.data","kind":"data","bytes":161168019,"sha256":"2344f439cbc2a86b12e89620112192b29696225d887294962ac731aa73d309b4","gzipBytes":137637031,"gzipSha256":"dda3157691a74eadab49da79aa4e1a0a44ca06532bf5b9d55be01877e2f35194","parts":[{"relative":"Build/Route88-Mobile.data.gzip-dda3157691a74ead.part01.bin","bytes":47185920,"sha256":"8aa57af1ac2a13c36e5fabe4836c305d1579e886948cee8495959aa5d9d366fe"},{"relative":"Build/Route88-Mobile.data.gzip-dda3157691a74ead.part02.bin","bytes":47185920,"sha256":"4ed7d65f8ed6aca6441120b3aa86b7d3e4b02511521bbc37f4a7973b9b4cc36c"},{"relative":"Build/Route88-Mobile.data.gzip-dda3157691a74ead.part03.bin","bytes":43265191,"sha256":"bff7437a38e7ab3d5c4074cca6142305bc759888280fb268ea089c38620ca371"}],"contentType":"application/octet-stream"},{"relative":"Build/Route88-Mobile.wasm","kind":"wasm","bytes":74286995,"sha256":"e101940115da10a7fe3266102f8217e31f3abca27505390e3f1d3de2fa0634f3","gzipBytes":16091798,"gzipSha256":"16fcfc0b86e7c2e7750cd9c910f56e8fd919e10a4d5f4b0563ede880cafac83b","parts":[{"relative":"Build/Route88-Mobile.wasm.gzip-16fcfc0b86e7c2e7.part01.bin","bytes":16091798,"sha256":"16fcfc0b86e7c2e7750cd9c910f56e8fd919e10a4d5f4b0563ede880cafac83b"}],"contentType":"application/wasm"},{"relative":"Build/Route88-Mobile.framework.js","kind":"framework","bytes":754335,"sha256":"3f7d5712391c732c9c55d7407b966ebbf55627bd7f1984398767558ebbfd6994","gzipBytes":155732,"gzipSha256":"48befd35c99563158ae642ff90470d00e8e9e83940dc4aab505ede17df3e9050","parts":[{"relative":"Build/Route88-Mobile.framework.js.gzip-48befd35c9956315.part01.bin","bytes":155732,"sha256":"48befd35c99563158ae642ff90470d00e8e9e83940dc4aab505ede17df3e9050"}],"contentType":"application/javascript"}];
+const config = {"buildId":"cabea468259e59504cb79e90ee4cd24ae3ecb0dad9f77bbad9c54e545f2e3c4b","loaderUrl":"Build/Route88-Mobile.loader.js?v=eb80a3efbadac51ea7f431ce9a59a0fd521f997a5a6ee9e4dde63609e955fd42","dataUrl":"Build/Route88-Mobile.data?v=51f81225a20ea28abb1c0efb6c3a594882fba722c0af52805eeb28117a376320","frameworkUrl":"Build/Route88-Mobile.framework.js?v=09bf31dd68ea4e6def44ddd2cc5b45073376eff6875c9522622d5f0047b27d24","codeUrl":"Build/Route88-Mobile.wasm?v=fbd6e9fbaa14048bfece3520f3da1cc25a5f3c59bff17fd4a37d1946e9f82279","streamingAssetsUrl":"StreamingAssets","companyName":"Scott Natoli","productName":"Route 88","productVersion":"1.0.0"};
+const initialFiles=[{"relative":"Build/Route88-Mobile.data","kind":"data","bytes":161175352,"sha256":"51f81225a20ea28abb1c0efb6c3a594882fba722c0af52805eeb28117a376320","gzipBytes":137639364,"gzipSha256":"2134fd5a81eeaa9812f2771e64bed17ff72dff05276bcbe95992f4595cd390c2","parts":[{"relative":"Build/Route88-Mobile.data.gzip-2134fd5a81eeaa98.part01.bin","bytes":47185920,"sha256":"fc8fd7cad536acb3bce2a243dd4ecbb9e54cb216beea50bcdf20c156d535e610"},{"relative":"Build/Route88-Mobile.data.gzip-2134fd5a81eeaa98.part02.bin","bytes":47185920,"sha256":"a3a9deb8aae1e5ab911a53f4ac92b03604d9f072fdb513130c389647227c1a22"},{"relative":"Build/Route88-Mobile.data.gzip-2134fd5a81eeaa98.part03.bin","bytes":43267524,"sha256":"0764645772bc07bce49d2eb45e2a05cb4a6d6697216f9c396972107ed0d3846c"}],"contentType":"application/octet-stream"},{"relative":"Build/Route88-Mobile.wasm","kind":"wasm","bytes":74340186,"sha256":"fbd6e9fbaa14048bfece3520f3da1cc25a5f3c59bff17fd4a37d1946e9f82279","gzipBytes":16111390,"gzipSha256":"30b743b72abeb07c07e54c7c73bbb4ddc268f52835a0501516690b8f3b6c76be","parts":[{"relative":"Build/Route88-Mobile.wasm.gzip-30b743b72abeb07c.part01.bin","bytes":16111390,"sha256":"30b743b72abeb07c07e54c7c73bbb4ddc268f52835a0501516690b8f3b6c76be"}],"contentType":"application/wasm"},{"relative":"Build/Route88-Mobile.framework.js","kind":"framework","bytes":754335,"sha256":"09bf31dd68ea4e6def44ddd2cc5b45073376eff6875c9522622d5f0047b27d24","gzipBytes":155739,"gzipSha256":"716c7418d4e77dc60a3985d6f4117c7ef6fc07e540cf9ba113b7d4ae008128e2","parts":[{"relative":"Build/Route88-Mobile.framework.js.gzip-716c7418d4e77dc6.part01.bin","bytes":155739,"sha256":"716c7418d4e77dc60a3985d6f4117c7ef6fc07e540cf9ba113b7d4ae008128e2"}],"contentType":"application/javascript"}];
 const transferTotal=initialFiles.reduce((sum,file)=>sum+file.gzipBytes,0);
 const transferLoaded=new Map();
 const shell=document.getElementById("shell"),canvas=document.getElementById("game"),overlay=document.getElementById("overlay"),start=document.getElementById("start"),retry=document.getElementById("retry"),fullscreen=document.getElementById("fullscreen"),status=document.getElementById("status"),progress=document.getElementById("progress"),errorBox=document.getElementById("error");
